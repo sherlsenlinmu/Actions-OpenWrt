@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt DW33D-NAND
+name: DW33D-NAND
 
 on:
   repository_dispatch:
