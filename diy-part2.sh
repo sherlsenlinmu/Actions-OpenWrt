@@ -24,6 +24,8 @@ rm -rf package/lean/simple-obfs
 rm -rf package/lean/pdnsd-alt
 rm -rf package/lean/ipt2socks
 rm -rf package/lean/dns2socks
+rm -rf luci/applications/luci-app-dawn
+rm -rf package/lean/luci-app-easymesh
  
 # autocore
 sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefile
@@ -59,6 +61,8 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/socat feeds/packages/n
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-timecontrol package/luci-app-timecontrol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/lean/luci-app-netdata
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata feeds/packages/admin/netdata
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dawn luci/applications/luci-app-dawn
+git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
 
 #删除docker无脑初始化教程
 sed -i '31,39d' package/lean/luci-app-docker/po/zh-cn/docker.po
