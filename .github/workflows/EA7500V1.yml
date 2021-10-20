@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt EA7500V1
+name: EA7500V1
 
 on:
   repository_dispatch:
