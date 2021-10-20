@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt R6800K
+name: R6800K
 
 on:
   repository_dispatch:
