@@ -62,6 +62,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-timecontrol p
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/lean/luci-app-netdata
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata feeds/packages/admin/netdata
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dawn feeds/luci/applications/luci-app-dawn
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-dockerman package/luci-app-dockerman
 git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
 
 # luci-app-easymesh
