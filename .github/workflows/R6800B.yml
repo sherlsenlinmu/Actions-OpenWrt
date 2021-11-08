@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede/tree/6f0e7105829326882f490a47b22edbabc580fcc3
+  REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: R6800B.config
@@ -60,6 +60,9 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
+        
+    - name: git reset
+      run: cd openwrt && git reset --hard 6f0e7105829326882f490a47b22edbabc580fcc3
 
     - name: Load custom feeds
       run: |
