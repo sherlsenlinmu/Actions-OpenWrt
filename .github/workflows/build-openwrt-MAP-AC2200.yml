@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt MAP-AC2200
+name: MAP-AC2200
 
 on:
   repository_dispatch:
