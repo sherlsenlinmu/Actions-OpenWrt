@@ -33,9 +33,9 @@ sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40x
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
-sed -i 's/R21.12.1/R21.12.5/g' package/lean/default-settings/files/zzz-default-settings
-#sed -i 's#root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
-sed -i '34d' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R21.12.1/R21.12.12/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's#root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
+#sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 
 # 添加额外软件包
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
@@ -68,8 +68,8 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata packa
 #sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
 
 # 删除docker无脑初始化教程
-sed -i '31,39d' package/lean/luci-app-docker/po/zh-cn/docker.po
-rm -rf package/lean/luci-app-docker/root/www
+#sed -i '31,39d' package/lean/luci-app-docker/po/zh-cn/docker.po
+#rm -rf package/lean/luci-app-docker/root/www
 
 # 晶晨宝盒
 sed -i "s|https.*/amlogic-s9xxx-openwrt|https://github.com/breakings/OpenWrt|g" package/apps/luci-app-amlogic/root/etc/config/amlogic
@@ -80,6 +80,7 @@ sed -i "s|s9xxx_lede|ARMv8|g" package/apps/luci-app-amlogic/root/etc/config/amlo
 # readd cpufreq for aarch64
 sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
 sed -i 's/services/system/g'  package/lean/luci-app-cpufreq/luasrc/controller/cpufreq.lua
+sed -i 's/"CPU 性能优化调节"/"CPU 调节"/g'  package/lean/luci-app-cpufreq/po/zh-cn/cpufreq.po
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
