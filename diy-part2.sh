@@ -80,7 +80,7 @@ sed -i "s|s9xxx_lede|ARMv8|g" package/apps/luci-app-amlogic/root/etc/config/amlo
 # readd cpufreq for aarch64
 sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
 sed -i 's/services/system/g'  package/lean/luci-app-cpufreq/luasrc/controller/cpufreq.lua
-sed -i 's/"CPU 性能优化调节"/"CPU 调节"/g'  package/lean/luci-app-cpufreq/po/zh-cn/cpufreq.po
+sed -i 's/"CPU 性能优化调节"/"CPU 设置"/g'  package/lean/luci-app-cpufreq/po/zh-cn/cpufreq.po
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
