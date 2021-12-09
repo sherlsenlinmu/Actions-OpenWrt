@@ -45,7 +45,7 @@ git clone https://github.com/rufengsuixing/luci-app-zerotier package/lean/luci-a
 git clone https://github.com/small-5/luci-app-adblock-plus package/apps/luci-app-adblock-plus
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser package/apps/luci-app-filebrowser
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-adguardhome package/apps/luci-app-adguardhome
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/AdGuardHome package/apps/AdGuardHome
+#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome package/apps/adguardhome
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-smartdns package/apps/luci-app-smartdns
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/smartdns feeds/packages/net/smartdns
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced package/apps/luci-app-advanced
