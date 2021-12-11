@@ -24,7 +24,7 @@ rm -rf package/lean/luci-app-netdata
 #rm -rf package/lean/pdnsd-alt
 #rm -rf package/lean/ipt2socks
 #rm -rf package/lean/dns2socks
-#rm -rf package/lean/luci-app-easymesh
+rm -rf package/lean/luci-app-easymesh
  
 # autocore
 sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefile
@@ -62,10 +62,10 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-timecontrol p
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/lean/luci-app-netdata
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata feeds/packages/admin/netdata
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-dockerman package/apps/luci-app-dockerman
-#git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
+git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
 
 # luci-app-easymesh
-#sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
+sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
 
 # 删除docker无脑初始化教程
 #sed -i '31,39d' package/lean/luci-app-docker/po/zh-cn/docker.po
@@ -80,7 +80,7 @@ sed -i "s|s9xxx_lede|ARMv8|g" package/apps/luci-app-amlogic/root/etc/config/amlo
 # readd cpufreq for aarch64
 sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' package/lean/luci-app-cpufreq/Makefile
 sed -i 's/services/system/g'  package/lean/luci-app-cpufreq/luasrc/controller/cpufreq.lua
-sed -i 's/"CPU 性能优化调节"/"CPU 设置"/g'  package/lean/luci-app-cpufreq/po/zh-cn/cpufreq.po
+sed -i 's/"CPU 性能优化调节"/"CPU 调频"/g'  package/lean/luci-app-cpufreq/po/zh-cn/cpufreq.po
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
