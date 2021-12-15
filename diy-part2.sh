@@ -25,7 +25,7 @@ rm -rf package/lean/luci-app-netdata
 #rm -rf package/lean/ipt2socks
 #rm -rf package/lean/dns2socks
 rm -rf package/lean/luci-app-easymesh
-rm -rf ./feeds/packages/utils/runc/Makefile
+rm -rf feeds/packages/utils/runc/Makefile
 
 # autocore
 sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefile
@@ -64,7 +64,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata packa
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata feeds/packages/admin/netdata
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-dockerman package/apps/luci-app-dockerman
 git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
-svn co https://github.com/openwrt/packages/trunk/utils/runc/Makefile ./feeds/packages/utils/runc/Makefile
+svn co https://github.com/openwrt/packages/trunk/utils/runc/Makefile feeds/packages/utils/runc/Makefile
 
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
