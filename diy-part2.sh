@@ -64,7 +64,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata packa
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata feeds/packages/admin/netdata
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-dockerman package/apps/luci-app-dockerman
 git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
-svn co https://github.com/openwrt/packages/trunk/utils/runc/Makefile feeds/packages/utils/runc/Makefile
+svn export https://github.com/openwrt/packages/trunk/utils/runc/Makefile feeds/packages/utils/runc/Makefile
 
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
