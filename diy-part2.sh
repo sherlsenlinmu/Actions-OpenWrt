@@ -12,12 +12,12 @@
 
 # 删除软件包
 rm -rf package/lean/luci-app-zerotier
-#rm -rf package/lean/mentohust
-#rm -rf feeds/packages/net/smartdns
-#rm -rf feeds/packages/net/socat
+rm -rf package/lean/mentohust
+rm -rf feeds/packages/net/smartdns
+rm -rf feeds/packages/net/socat
 #rm -rf feeds/packages/net/kcptun
 rm -rf package/lean/luci-app-netdata
-#rm -rf feeds/packages/net/adguardhome
+rm -rf feeds/packages/net/adguardhome
 #rm -rf feeds/packages/admin/netdata
 #rm -rf package/lean/trojan
 #rm -rf package/lean/microsocks
@@ -45,19 +45,19 @@ git clone https://github.com/rufengsuixing/luci-app-zerotier package/lean/luci-a
 git clone https://github.com/small-5/luci-app-adblock-plus package/apps/luci-app-adblock-plus
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser package/apps/luci-app-filebrowser
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-adguardhome package/apps/luci-app-adguardhome
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome package/apps/adguardhome
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome package/apps/adguardhome
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-smartdns package/apps/luci-app-smartdns
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/smartdns feeds/packages/net/smartdns
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/smartdns feeds/packages/net/smartdns
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced package/apps/luci-app-advanced
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-eqos package/apps/luci-app-eqos
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-iptvhelper package/apps/luci-app-iptvhelper
 svn co https://github.com/kiddin9/openwrt-packages/trunk/iptvhelper package/apps/iptvhelper
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-mentohust package/apps/luci-app-mentohust
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/mentohust package/lean/mentohust
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/mentohust package/lean/mentohust
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-rebootschedule package/apps/luci-app-rebootschedule
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package/apps/luci-app-socat
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/socat feeds/packages/net/socat
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/socat feeds/packages/net/socat
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-timecontrol package/apps/luci-app-timecontrol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/lean/luci-app-netdata
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata feeds/packages/admin/netdata
