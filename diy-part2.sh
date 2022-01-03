@@ -15,15 +15,9 @@ rm -rf package/lean/luci-app-zerotier
 rm -rf package/lean/mentohust
 rm -rf feeds/packages/net/smartdns
 rm -rf feeds/packages/net/socat
-#rm -rf feeds/packages/net/kcptun
 rm -rf package/lean/luci-app-netdata
-rm -rf feeds/packages/net/adguardhome
+#rm -rf feeds/packages/net/adguardhome
 #rm -rf feeds/packages/admin/netdata
-#rm -rf package/lean/trojan
-#rm -rf package/lean/microsocks
-#rm -rf package/lean/pdnsd-alt
-#rm -rf package/lean/ipt2socks
-#rm -rf package/lean/dns2socks
 rm -rf package/lean/luci-app-easymesh
 
 # autocore
@@ -33,7 +27,7 @@ sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40x
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
-sed -i 's/R21.12.1/R21.12.25/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R22.1.1/R22.1.3/g' package/lean/default-settings/files/zzz-default-settings
 #sed -i 's#root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
 sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 
@@ -45,7 +39,7 @@ git clone https://github.com/rufengsuixing/luci-app-zerotier package/lean/luci-a
 git clone https://github.com/small-5/luci-app-adblock-plus package/apps/luci-app-adblock-plus
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser package/apps/luci-app-filebrowser
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-adguardhome package/apps/luci-app-adguardhome
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome package/apps/adguardhome
+#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome package/apps/adguardhome
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-smartdns package/apps/luci-app-smartdns
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/smartdns feeds/packages/net/smartdns
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced package/apps/luci-app-advanced
@@ -68,8 +62,8 @@ git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easy
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
 
 # 删除docker无脑初始化教程
-#sed -i '31,39d' package/lean/luci-app-docker/po/zh-cn/docker.po
-#rm -rf package/lean/luci-app-docker/root/www
+sed -i '31,39d' package/lean/luci-app-docker/po/zh-cn/docker.po
+rm -rf package/lean/luci-app-docker/root/www
 
 # 晶晨宝盒
 sed -i "s|https.*/amlogic-s9xxx-openwrt|https://github.com/breakings/OpenWrt|g" package/apps/luci-app-amlogic/root/etc/config/amlogic
