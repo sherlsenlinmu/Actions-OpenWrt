@@ -13,11 +13,7 @@
 # 删除软件包
 rm -rf package/lean/luci-app-zerotier
 rm -rf package/lean/mentohust
-rm -rf feeds/packages/net/smartdns
-rm -rf feeds/packages/net/socat
 rm -rf package/lean/luci-app-netdata
-#rm -rf feeds/packages/net/adguardhome
-#rm -rf feeds/packages/admin/netdata
 rm -rf package/lean/luci-app-easymesh
 
 # autocore
@@ -27,21 +23,19 @@ sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40x
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
-sed -i 's/R22.1.1/R22.1.3/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R22.1.1/R22.1.8/g' package/lean/default-settings/files/zzz-default-settings
 #sed -i 's#root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
 sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 
 # 添加额外软件包
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/apps/luci-app-amlogic
-git clone https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/lean/luci-app-zerotier
 git clone https://github.com/small-5/luci-app-adblock-plus package/apps/luci-app-adblock-plus
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser package/apps/luci-app-filebrowser
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-adguardhome package/apps/luci-app-adguardhome
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/adguardhome package/apps/adguardhome
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-smartdns package/apps/luci-app-smartdns
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/smartdns feeds/packages/net/smartdns
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced package/apps/luci-app-advanced
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-eqos package/apps/luci-app-eqos
@@ -51,11 +45,8 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-mentohust pac
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/mentohust package/lean/mentohust
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-rebootschedule package/apps/luci-app-rebootschedule
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package/apps/luci-app-socat
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/socat feeds/packages/net/socat
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-timecontrol package/apps/luci-app-timecontrol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/lean/luci-app-netdata
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netdata feeds/packages/admin/netdata
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-dockerman package/apps/luci-app-dockerman
 git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
 
 # luci-app-easymesh
