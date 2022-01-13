@@ -69,3 +69,8 @@ sed -i 's/"CPU 性能优化调节"/"CPU 调频"/g'  package/lean/luci-app-cpufre
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+
+#revert routing
+cd feeds/routing
+git reset –hard e43c272acb03255e47c2321e9e3ac935d437f3c3
+popd
