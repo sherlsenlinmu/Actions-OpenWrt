@@ -85,10 +85,6 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
-        
-    - name: revert routing
-      run: |
-        cd openwrt/feeds/routing && git reset –hard e43c272acb03255e47c2321e9e3ac935d437f3c3
            
     - name: Download package
       id: package
@@ -129,6 +125,7 @@ jobs:
         rm -rf packages
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
+        
     - name: Upload firmware directory
       uses: actions/upload-artifact@main
       if: steps.organize.outputs.status == 'success' && !cancelled()
