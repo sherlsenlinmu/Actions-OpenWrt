@@ -83,6 +83,11 @@ jobs:
         chmod +x $DIY_P2_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P2_SH
+        #revert routing
+        cd feeds/routing
+        git reset –hard e43c272acb03255e47c2321e9e3ac935d437f3c3
+        popd
+        
     - name: Download package
       id: package
       run: |
