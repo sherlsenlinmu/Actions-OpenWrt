@@ -23,7 +23,7 @@ sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40x
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
-sed -i 's/R22.1.1/R22.1.8/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R22.1.1/R22.1.14/g' package/lean/default-settings/files/zzz-default-settings
 #sed -i 's#root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
 sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 
@@ -48,6 +48,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-timecontrol package/apps/luci-app-timecontrol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/lean/luci-app-netdata
 git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
+git clone https://github.com/openwrt/routing feeds/routing
 
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
@@ -69,9 +70,3 @@ sed -i 's/"CPU 性能优化调节"/"CPU 调频"/g'  package/lean/luci-app-cpufre
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-
-#revert routing
-#rm -rf feeds/routing
-git clone https://github.com/openwrt/routing feeds/routing
-cd feeds/routing && git reset –hard e43c272acb03255e47c2321e9e3ac935d437f3c3
-popd
