@@ -48,6 +48,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-timecontrol package/apps/luci-app-timecontrol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/lean/luci-app-netdata
 git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
+git clone https://github.com/openwrt/routing feeds/routing
 
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
@@ -69,8 +70,3 @@ sed -i 's/"CPU 性能优化调节"/"CPU 调频"/g'  package/lean/luci-app-cpufre
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-
-#Revert routing
-git clone https://github.com/openwrt/routing feeds/routing
-cd feeds/routing && git reset --hard e43c272acb03255e47c2321e9e3ac935d437f3c3
-popd     
