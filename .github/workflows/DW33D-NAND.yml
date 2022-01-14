@@ -87,7 +87,10 @@ jobs:
         $GITHUB_WORKSPACE/$DIY_P2_SH
         
     - name: Revert routing
-      run: cd openwrt/feeds/routing && git reset --hard e43c272acb03255e47c2321e9e3ac935d437f3c3 
+      run: |
+        cd openwrt/feeds/routing
+        git reset --hard e43c272acb03255e47c2321e9e3ac935d437f3c3
+        popd
       
     - name: Download package
       id: package
