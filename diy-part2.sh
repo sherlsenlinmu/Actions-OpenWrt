@@ -15,7 +15,6 @@ rm -rf package/lean/luci-app-zerotier
 rm -rf package/lean/mentohust
 rm -rf package/lean/luci-app-netdata
 rm -rf package/lean/luci-app-easymesh
-rm -rf feeds/routing/batman-adv
 
 # autocore
 sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefile
@@ -50,7 +49,6 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-timecontrol p
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/lean/luci-app-netdata
 git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
 #git clone https://github.com/openwrt/routing feeds/routing
-git clone https://github.com/sherlsenlinmu/batman-adv feeds/routing/batman-adv
 
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
@@ -72,3 +70,6 @@ sed -i 's/"CPU 性能优化调节"/"CPU 调频"/g'  package/lean/luci-app-cpufre
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
+
+rm -rf feeds/routing/batman-adv
+git clone https://github.com/sherlsenlinmu/batman-adv feeds/routing/batman-adv
