@@ -69,6 +69,3 @@ sed -i 's/"CPU 性能优化调节"/"CPU 调频"/g'  package/lean/luci-app-cpufre
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-
-#rm -rf feeds/routing/batman-adv
-#git clone https://github.com/sherlsenlinmu/batman-adv feeds/routing/batman-adv
