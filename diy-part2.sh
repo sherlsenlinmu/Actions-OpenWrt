@@ -15,6 +15,7 @@ rm -rf package/lean/luci-app-zerotier
 rm -rf package/lean/mentohust
 rm -rf package/lean/luci-app-netdata
 rm -rf package/lean/luci-app-easymesh
+rm -rf feeds/routing/batman-adv
 
 # autocore
 sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefile
@@ -48,7 +49,8 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-timecontrol package/apps/luci-app-timecontrol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/lean/luci-app-netdata
 git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
-git clone https://github.com/openwrt/routing feeds/routing
+#git clone https://github.com/openwrt/routing feeds/routing
+git clone https://github.com/sherlsenlinmu/batman-adv feeds/routing/batman-adv
 
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
