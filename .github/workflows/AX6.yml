@@ -13,6 +13,11 @@ name: AX6
 on:
   repository_dispatch:
   workflow_dispatch:
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -72,7 +77,7 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
  
-     - name: commit 83f53db630dad840fab09a830962f536b539cf0a
+    - name: Commit 83f53db
       run: cd openwrt && git reset --hard 83f53db630dad840fab09a830962f536b539cf0a
 
     - name: Load custom configuration
