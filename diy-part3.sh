@@ -39,6 +39,7 @@ rm -rf package/lean/luci-app-mwan3helper
 rm -rf package/lean/luci-app-filetransfer
 rm -rf package/lean/ipv6-helper
 rm -rf package/lean/ddns-scripts_dnspod
+rm -rf package/lean/autocore
 
 # Modify default
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
@@ -87,6 +88,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-mwan3hel
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-filetransfer package/lean/luci-app-filetransfer
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ipv6-helper package/lean/ipv6-helper
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ddns-scripts_dnspod package/lean/ddns-scripts_dnspod
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autocore package/lean/autocore
 
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
