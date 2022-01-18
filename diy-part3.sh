@@ -42,6 +42,7 @@ rm -rf package/lean/ddns-scripts_dnspod
 rm -rf package/lean/autocore
 rm -rf package/lean/luci-app-uugamebooster
 rm -rf package/lean/uugamebooster
+rm -rf package/lean/luci-app-kodexplorer
 
 # Modify default
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
