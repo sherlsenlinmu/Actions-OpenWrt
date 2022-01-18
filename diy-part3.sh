@@ -15,6 +15,14 @@ rm -rf package/lean/luci-app-zerotier
 rm -rf package/lean/mentohust
 rm -rf package/lean/luci-app-netdata
 rm -rf package/lean/luci-app-easymesh
+rm -rf package/lean/luci-app-vlmcsd
+rm -rf package/lean/vlmcsd
+rm -rf package/lean/luci-app-aliyundrive-webdav
+rm -rf package/lean/aliyundrive-webdav
+rm -rf package/lean/luci-app-unblockmusic
+rm -rf package/lean/UnblockNeteaseMusic-Go
+rm -rf package/lean/luci-app-jd-dailybonus
+rm -rf package/lean/luci-app-pushbot
 
 # Modify default
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
@@ -43,6 +51,15 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-timecontrol package/apps/luci-app-timecontrol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/lean/luci-app-netdata
 git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ package/lean/
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ package/lean/
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ package/lean/
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ package/lean/
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ package/lean/
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ package/lean/
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ package/lean/
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ package/lean/
+
 
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
