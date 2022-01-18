@@ -40,6 +40,8 @@ rm -rf package/lean/luci-app-filetransfer
 rm -rf package/lean/ipv6-helper
 rm -rf package/lean/ddns-scripts_dnspod
 rm -rf package/lean/autocore
+rm -rf package/lean/luci-app-uugamebooster
+rm -rf package/lean/uugamebooster
 
 # Modify default
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
@@ -89,6 +91,8 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-filetran
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ipv6-helper package/lean/ipv6-helper
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/ddns-scripts_dnspod package/lean/ddns-scripts_dnspod
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autocore package/lean/autocore
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-uugamebooster package/lean/luci-app-uugamebooster
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/uugamebooster package/lean/uugamebooster
 
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
