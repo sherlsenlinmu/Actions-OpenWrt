@@ -20,7 +20,7 @@ rm -rf package/lean/vlmcsd
 rm -rf package/lean/luci-app-aliyundrive-webdav
 rm -rf package/lean/aliyundrive-webdav
 rm -rf package/lean/luci-app-unblockmusic
-rm -rf package/lean/UnblockNeteaseMusic-Go
+rm -rf package/lean/UnblockNeteaseMusicGo
 rm -rf package/lean/luci-app-jd-dailybonus
 rm -rf package/lean/luci-app-pushbot
 rm -rf package/lean/trojan
