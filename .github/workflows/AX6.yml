@@ -59,6 +59,7 @@ jobs:
         git clone $REPO_URL -b $REPO_BRANCH openwrt
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
         cd openwrt
+        git reset --hard 83f53db630dad840fab09a830962f536b539cf0a
         useVersionInfo=$(git show -s --date=short --format="Author: %an<br/>date: %cd<br/>commit: %s<br/>commit hash: %H")
         echo "useVersionInfo=$useVersionInfo" >> $GITHUB_ENV
         echo "DATE=$(date "+%Y-%m-%d %H:%M:%S")" >> $GITHUB_ENV
@@ -77,8 +78,8 @@ jobs:
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
  
-    - name: Commit 83f53db
-      run: cd openwrt && git reset --hard 83f53db630dad840fab09a830962f536b539cf0a
+#    - name: Commit 83f53db
+#      run: cd openwrt && git reset --hard 83f53db630dad840fab09a830962f536b539cf0a
 
     - name: Load custom configuration
       run: |
