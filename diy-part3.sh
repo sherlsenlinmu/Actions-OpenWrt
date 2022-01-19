@@ -23,8 +23,8 @@ rm -rf package/lean/luci-app-unblockmusic
 rm -rf package/lean/UnblockNeteaseMusicGo
 rm -rf package/lean/luci-app-jd-dailybonus
 rm -rf package/lean/luci-app-pushbot
-rm -rf package/lean/trojan
-rm -rf package/lean/simple-obfs
+#rm -rf package/lean/trojan
+#rm -rf package/lean/simple-obfs
 rm -rf package/lean/vsftpd-alt
 rm -rf package/lean/tcpping
 rm -rf package/lean/microsocks
