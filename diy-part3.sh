@@ -42,7 +42,7 @@ rm -rf package/lean/ddns-scripts_dnspod
 rm -rf package/lean/autocore
 rm -rf package/lean/luci-app-uugamebooster
 rm -rf package/lean/uugamebooster
-rm -rf package/lean/luci-app-kodexplorer
+#rm -rf package/lean/luci-app-kodexplorer
 #rm -rf package/network/utils/dpdk
 rm -rf feeds/packages/net/adguardhome
 rm -rf feeds/packages/net/zerotier
