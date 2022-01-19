@@ -77,9 +77,6 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
- 
-#    - name: Commit 83f53db
-#      run: cd openwrt && git reset --hard 83f53db630dad840fab09a830962f536b539cf0a
 
     - name: Load custom configuration
       run: |
