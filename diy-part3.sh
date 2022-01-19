@@ -43,6 +43,7 @@ rm -rf package/lean/autocore
 rm -rf package/lean/luci-app-uugamebooster
 rm -rf package/lean/uugamebooster
 rm -rf package/lean/luci-app-kodexplorer
+rm -rf package/network/utils/dpdk
 
 # Modify default
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
@@ -95,6 +96,7 @@ svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autocore package/
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-uugamebooster package/lean/luci-app-uugamebooster
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/uugamebooster package/lean/uugamebooster
 svn export https://github.com/openwrt/openwrt/trunk/include/meson.mk include/meson.mk
+svn co https://github.com/coolsnowwolf/lede/trunk/package/network/utils/dpdk package/network/utils/dpdk
 
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
