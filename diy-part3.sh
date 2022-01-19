@@ -105,6 +105,7 @@ svn co https://github.com/coolsnowwolf/packages/trunk/net/adguardhome feeds/pack
 svn co https://github.com/coolsnowwolf/packages/trunk/net/zerotier feeds/packages/net/zerotier
 svn co https://github.com/coolsnowwolf/packages/trunk/net/dawn feeds/packages/net/dawn
 svn co https://github.com/coolsnowwolf/packages/trunk/admin/netdata feeds/packages/admin/netdata
+git clone https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
