@@ -110,5 +110,5 @@ svn co https://github.com/coolsnowwolf/packages/trunk/admin/netdata feeds/packag
 # luci-app-easymesh
 sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
 
-./scripts/feeds update -a
+#./scripts/feeds update -a
 ./scripts/feeds install -a
