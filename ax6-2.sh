@@ -6,8 +6,8 @@
 # See /LICENSE for more information.
 #
 # https://github.com/P3TERX/Actions-OpenWrt
-# File name: diy-part3.sh
-# Description: OpenWrt DIY script part 3 (After Update feeds)
+# File name: ax6-2.sh
+# Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 
 # 删除软件包
