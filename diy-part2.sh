@@ -50,7 +50,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata packa
 git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
 
 # luci-app-easymesh
-sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
+#sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/lean/luci-app-easymesh/Makefile
 
 # 删除docker无脑初始化教程
 sed -i '31,39d' package/lean/luci-app-docker/po/zh-cn/docker.po
