@@ -23,15 +23,15 @@ sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40x
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
-sed -i 's/R22.2.2/R22.3.9/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R22.3.13/R22.3.13/g' package/lean/default-settings/files/zzz-default-settings
 #sed -i 's#root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
 sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 
 # 添加额外软件包
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/apps/luci-app-amlogic
-git clone https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-passwall package/apps/luci-app-passwall
+git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
+git clone -b luci --single-branch https://github.com/xiaorouji/luci-app-passwall package/apps/luci-app-passwall
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
 git clone https://github.com/small-5/luci-app-adblock-plus package/apps/luci-app-adblock-plus
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser package/apps/luci-app-filebrowser
@@ -46,7 +46,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-mentohust pac
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/mentohust package/apps/mentohust
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-rebootschedule package/apps/luci-app-rebootschedule
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package/apps/luci-app-socat
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-timecontrol package/apps/luci-app-timecontrol
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-weburl package/apps/luci-app-control-weburl
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/apps/luci-app-netdata
 git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
 
