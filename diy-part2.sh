@@ -31,7 +31,7 @@ sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/apps/luci-app-amlogic
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
-git clone -b luci --single-branch https://github.com/xiaorouji/luci-app-passwall package/apps/luci-app-passwall
+git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
 git clone https://github.com/small-5/luci-app-adblock-plus package/apps/luci-app-adblock-plus
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser package/apps/luci-app-filebrowser
