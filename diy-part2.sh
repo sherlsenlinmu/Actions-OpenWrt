@@ -13,7 +13,7 @@
 # 删除软件包
 rm -rf feeds/luci/applications/luci-app-zerotier
 rm -rf package/lean/mentohust
-rm -rf feeds/luci/applications/luci-app-netdata
+#rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/luci/applications/luci-app-easymesh
 
 # autocore
@@ -43,7 +43,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-iptvhelper pac
 svn co https://github.com/kiddin9/openwrt-packages/trunk/iptvhelper package/apps/iptvhelper
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-mentohust package/apps/luci-app-mentohust
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/mentohust package/apps/mentohust
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/apps/luci-app-netdata
+#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/apps/luci-app-netdata
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
