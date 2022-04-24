@@ -47,6 +47,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/aliyundrive-webdav pack
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-unblockmusic package/lean/luci-app-unblockmusic
 svn co https://github.com/kiddin9/openwrt-packages/trunk/UnblockNeteaseMusic-Go package/lean/UnblockNeteaseMusic-Go
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pushbot package/lean/luci-app-pushbot
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolproxyR package/apps/luci-app-koolproxyR
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autocore package/lean/autocore
 svn co https://github.com/coolsnowwolf/packages/trunk/net/zerotier feeds/packages/net/zerotier
 svn co https://github.com/coolsnowwolf/packages/trunk/net/dawn feeds/packages/net/dawn
