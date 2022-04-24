@@ -22,6 +22,7 @@ rm -rf package/lean/UnblockNeteaseMusicGo
 rm -rf package/lean/luci-app-pushbot
 rm -rf package/lean/autocore
 rm -rf feeds/packages/net/zerotier
+rm -rf feeds/packages/net/smartdns
 rm -rf feeds/packages/net/dawn
 
 # Modify default
@@ -50,6 +51,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pushbot packag
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolproxyR package/apps/luci-app-koolproxyR
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/autocore package/lean/autocore
 svn co https://github.com/coolsnowwolf/packages/trunk/net/zerotier feeds/packages/net/zerotier
+svn co https://github.com/coolsnowwolf/packages/trunk/net/smartdns feeds/packages/net/smartdns
 svn co https://github.com/coolsnowwolf/packages/trunk/net/dawn feeds/packages/net/dawn
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
