@@ -47,8 +47,8 @@ git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall 
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
 
 # luci-app-easymesh
-git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
-sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/apps/luci-app-easymesh/Makefile
+#git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
+#sed -i 's/wpad-mesh-openssl/wpad-openssl/g' package/apps/luci-app-easymesh/Makefile
 
 # 删除docker无脑初始化教程
 sed -i '31,39d' feeds/luci/applications/luci-app-docker/po/zh-cn/docker.po
