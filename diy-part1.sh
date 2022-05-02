@@ -17,6 +17,6 @@ sed -i '3d' feeds.conf.default
 
 # Add a feed source
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git routing https://git.openwrt.org/feed/routing.git^a7b79a1d4fce4f443854115ee4b2ed2aafba5c06' >>feeds.conf.default
+echo 'src-git routing https://git.openwrt.org/feed/routing.git^fffa9cb161acee226f1080cda2a3d53ded656f14' >>feeds.conf.default
 #echo 'src-git packages https://github.com/coolsnowwolf/packages.git^fd95b1a5f9c1130339c4e61bc6061ae55e04220d' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
