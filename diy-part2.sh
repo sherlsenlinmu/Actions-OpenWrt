@@ -12,10 +12,8 @@
 
 # 删除软件包
 rm -rf feeds/luci/applications/luci-app-zerotier
-#rm -rf package/lean/mentohust
-#rm -rf feeds/luci/applications/luci-app-netdata
 rm -rf feeds/luci/applications/luci-app-easymesh
-#rm -rf feeds/packages/net/adguardhome
+rm -rf feeds/packages/net/adguardhome
 
 # autocore
 sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefile
@@ -38,20 +36,15 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced pack
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-weburl package/apps/luci-app-control-weburl
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-rebootschedule package/apps/luci-app-rebootschedule
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-speedlimit package/apps/luci-app-control-speedlimit
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package/apps/luci-app-socat
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-iptvhelper package/apps/luci-app-iptvhelper
 svn co https://github.com/kiddin9/openwrt-packages/trunk/iptvhelper package/apps/iptvhelper
-#svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/apps/adguardhome
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolproxyR package/apps/luci-app-koolproxyR
+svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/apps/adguardhome
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolproxyR package/apps/luci-app-koolproxyR
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter package/apps/luci-app-dnsfilter
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-mentohust package/apps/luci-app-mentohust
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/mentohust package/apps/mentohust
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-netdata package/apps/luci-app-netdata
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
-#git clone https://github.com/small-5/luci-app-adblock-plus package/apps/luci-app-adblock-plus
 
 # luci-app-easymesh
 git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
