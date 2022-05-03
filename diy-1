@@ -11,7 +11,6 @@
 #
 
 # Uncomment a feed source
-
 sed -i '4d' feeds.conf.default
 sed -i '3d' feeds.conf.default
 sed -i '2d' feeds.conf.default
