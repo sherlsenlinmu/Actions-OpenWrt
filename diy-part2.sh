@@ -12,7 +12,7 @@
 
 # 删除软件包
 rm -rf feeds/luci/applications/luci-app-zerotier
-rm -rf feeds/luci/applications/luci-app-easymesh
+#rm -rf feeds/luci/applications/luci-app-easymesh
 rm -rf feeds/packages/net/adguardhome
 
 # autocore
