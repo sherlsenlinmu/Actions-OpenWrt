@@ -14,7 +14,6 @@
 rm -rf feeds/luci/applications/luci-app-zerotier
 #rm -rf feeds/luci/applications/luci-app-easymesh
 rm -rf feeds/packages/net/adguardhome
-sed -i '1069d' target/linux/generic/config-5.4
 
 # autocore
 sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefile
