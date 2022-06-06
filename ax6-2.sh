@@ -28,7 +28,7 @@ rm -rf feeds/packages/net/smartdns
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
-sed -i 's/R21.7.1.100/R22.5.3/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R21.7.1.100/R22.6.6/g' package/lean/default-settings/files/zzz-default-settings
 #sed -i 's#root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
 sed -i '33d' package/lean/default-settings/files/zzz-default-settings
 
@@ -49,7 +49,8 @@ svn co https://github.com/coolsnowwolf/packages/trunk/net/zerotier feeds/package
 svn co https://github.com/coolsnowwolf/packages/trunk/net/smartdns feeds/packages/net/smartdns
 svn co https://github.com/coolsnowwolf/packages/trunk/net/cloudflared feeds/packages/net/cloudflared
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
-git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
+#git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
+git clone https://github.com/xiaorouji/openwrt-passwall2 package/apps/luci-app-passwall2
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/lean/luci-app-zerotier
 
 # luci-app-easymesh
