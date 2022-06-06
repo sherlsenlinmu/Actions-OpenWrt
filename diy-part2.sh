@@ -11,9 +11,9 @@
 #
 
 # 删除软件包
-rm -rf feeds/luci/applications/luci-app-zerotier
+#rm -rf feeds/luci/applications/luci-app-zerotier
 #rm -rf feeds/luci/applications/luci-app-easymesh
-rm -rf feeds/packages/net/adguardhome
+#rm -rf feeds/packages/net/adguardhome
 
 # autocore
 sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefile
@@ -36,16 +36,16 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced pack
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-weburl package/apps/luci-app-control-weburl
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-rebootschedule package/apps/luci-app-rebootschedule
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package/apps/luci-app-socat
+#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package/apps/luci-app-socat
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-iptvhelper package/apps/luci-app-iptvhelper
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/iptvhelper package/apps/iptvhelper
-svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/apps/adguardhome
+#svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/apps/adguardhome
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolproxyR package/apps/luci-app-koolproxyR
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter package/apps/luci-app-dnsfilter
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 #git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall2 package/apps/luci-app-passwall2
-git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
+#git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
