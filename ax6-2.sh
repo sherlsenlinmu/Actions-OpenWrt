@@ -36,6 +36,8 @@ sed -i '33d' package/lean/default-settings/files/zzz-default-settings
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter package/apps/luci-app-dnsfilter
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-smartdns package/apps/luci-app-smartdns
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ipsec-server package/apps/luci-app-ipsec-server
+svn co https://github.com/kiddin9/openwrt-packages/trunk/openwrt-cloudflared package/apps/cloudflared
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-vlmcsd package/lean/luci-app-vlmcsd
 svn co https://github.com/kiddin9/openwrt-packages/trunk/vlmcsd package/lean/vlmcsd
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-aliyundrive-webdav package/lean/luci-app-aliyundrive-webdav
