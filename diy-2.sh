@@ -18,7 +18,7 @@ rm -rf package/lean/vlmcsd
 rm -rf package/lean/luci-app-aliyundrive-webdav
 rm -rf package/lean/aliyundrive-webdav
 rm -rf package/lean/luci-app-unblockmusic
-rm -rf package/lean/UnblockNeteaseMusicGo
+rm -rf package/lean/UnblockNeteaseMusic-Go
 rm -rf package/lean/luci-app-pushbot
 rm -rf feeds/packages/net/zerotier
 rm -rf feeds/packages/net/smartdns
@@ -46,7 +46,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/UnblockNeteaseMusic-Go 
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pushbot package/lean/luci-app-pushbot
 svn co https://github.com/coolsnowwolf/packages/trunk/net/zerotier feeds/packages/net/zerotier
 svn co https://github.com/coolsnowwolf/packages/trunk/net/smartdns feeds/packages/net/smartdns
-svn co https://github.com/coolsnowwolf/packages/trunk/net/cloudflared feeds/packages/net/cloudflared
+#svn co https://github.com/coolsnowwolf/packages/trunk/net/cloudflared feeds/packages/net/cloudflared
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/lean/luci-app-zerotier
