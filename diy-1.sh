@@ -24,7 +24,7 @@ sed -i '1d' feeds.conf.default
 #echo 'src-git telephony https://git.openwrt.org/feed/telephony.git^1e2c2bcb5faf33408ea566ee7bae55e58984d80c' >>feeds.conf.default
 
 # Add a feed source 155
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+echo 'src-git helloworld https://github.com/fw876/helloworld^b4ede27bc2665208b7c5b2901abab55ea780d7b3' >>feeds.conf.default
 echo 'src-git packages https://github.com/coolsnowwolf/packages^da33e86cc79bf69859ea6897f6acf4dbe329c200' >>feeds.conf.default
 echo 'src-git luci https://github.com/coolsnowwolf/luci^9b796b1d6048987a5ac46acb658b0d89edc59c8d' >>feeds.conf.default
 echo 'src-git routing https://git.openwrt.org/feed/routing.git^2ac3accf36db53906ccb081dcbe6fafd05beaa6d' >>feeds.conf.default
