@@ -83,15 +83,6 @@ jobs:
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
-      
-    - name: Install cloudflared 
-      run: cd openwrt && svn co https://github.com/coolsnowwolf/packages/trunk/net/cloudflared feeds/packages/net/cloudflared
-      
-    - name: Update feeds
-      run: cd openwrt && ./scripts/feeds update -a      
-      
-    - name: Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
 
     - name: Load custom configuration
       run: |
