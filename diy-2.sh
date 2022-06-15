@@ -28,7 +28,7 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
 #sed -i 's/21.4.18/R22.6.6/g' package/lean/default-settings/files/zzz-default-settings
-sed -i 's/21.10.1/R22.6.8/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/21.10.1/R22.6.15/g' package/lean/default-settings/files/zzz-default-settings
 #sed -i 's#root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
 #sed -i '33d' package/lean/default-settings/files/zzz-default-settings
 sed -i '34d' package/lean/default-settings/files/zzz-default-settings
