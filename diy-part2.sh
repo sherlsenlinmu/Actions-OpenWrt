@@ -49,6 +49,8 @@ git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall 
 git clone -b default --single-branch https://github.com/AutoCONFIG/minieap-openwrt.git package/apps/minieap-openwrt
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-minieap package/apps/luci-app-minieap
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-nginx-manager package/apps/luci-app-nginx-manager
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-LingTiGameAcc package/apps/luci-app-LingTiGameAcc
+svn co https://github.com/kiddin9/openwrt-packages/trunk/LingTiGameAcc package/apps/LingTiGameAcc
 
 
 
