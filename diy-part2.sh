@@ -42,6 +42,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-iptvhelper pac
 svn co https://github.com/kiddin9/openwrt-packages/trunk/iptvhelper package/apps/iptvhelper
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/apps/adguardhome
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolproxyR package/apps/luci-app-koolproxyR
+svn co https://github.com/kenzok8/small-package/trunk/luci-app-godproxy package/apps/luci-app-godproxy
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter package/apps/luci-app-dnsfilter
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
@@ -61,6 +62,8 @@ https://github.com/kenzok8/small-package/tree/main/luci-app-mentohust
 svn co https://github.com/kiddin9/openwrt-packages/trunk/MentoHUST-OpenWrt-ipk package/apps/mentohust
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-argonne-config package/apps/luci-app-argonne-config
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-argonne package/apps/luci-theme-argonne
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-usb3disable package/apps/luci-app-usb3disable
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-xunlei package/apps/luci-app-xunlei
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
