@@ -51,8 +51,8 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-minieap packag
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-nginx-manager package/apps/luci-app-nginx-manager
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-LingTiGameAcc package/apps/luci-app-LingTiGameAcc
 svn co https://github.com/kiddin9/openwrt-packages/trunk/LingTiGameAcc package/apps/LingTiGameAcc
-
-
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gost package/apps/luci-app-gost
+svn co https://github.com/kiddin9/openwrt-packages/trunk/gost package/apps/gost
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
