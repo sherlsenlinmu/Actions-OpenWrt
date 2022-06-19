@@ -28,7 +28,7 @@ sed -i 's/R22.6.16/R22.6.19/g' package/lean/default-settings/files/zzz-default-s
 sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 
 # 添加额外软件包
-#svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/apps/luci-app-amlogic
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser package/apps/luci-app-filebrowser
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome package/apps/luci-app-adguardhome
