@@ -46,6 +46,11 @@ git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passw
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
 #git clone https://github.com/xiaorouji/openwrt-passwall2 package/apps/luci-app-passwall2
 #git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
+git clone -b default --single-branch https://github.com/AutoCONFIG/minieap-openwrt.git package/apps/minieap-openwrt
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-minieap package/apps/luci-app-minieap
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-nginx-manager package/apps/luci-app-nginx-manager
+
+
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
