@@ -45,7 +45,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-iptvhelper pac
 svn co https://github.com/kiddin9/openwrt-packages/trunk/iptvhelper package/apps/iptvhelper
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter package/apps/luci-app-dnsfilter
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-usb3disable package/apps/luci-app-usb3disable
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-xunlei package/apps/luci-app-xunlei
+svn co https://github.com/kenzok8/small-package/trunk/luci-app-xunlei package/apps/luci-app-xunlei
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-rssi package/apps/luci-app-ledtrig-rssi
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-usbport package/apps/luci-app-ledtrig-usbport
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-switch package/apps/luci-app-ledtrig-switch
@@ -71,7 +71,7 @@ svn co https://github.com/kenzok8/small-package/trunk/luci-app-mosdns package/ap
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-dnsmasq-ipset package/apps/luci-app-dnsmasq-ipset
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-supervisord package/apps/luci-app-supervisord
-svn co https://github.com/kenzok8/small-package/trunk/luci-proto-minieap package/apps/luci-proto-minieap
+#svn co https://github.com/kenzok8/small-package/trunk/luci-proto-minieap package/apps/luci-proto-minieap
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-minieap package/apps/luci-app-minieap
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-nginx-manager package/apps/luci-app-nginx-manager
@@ -84,7 +84,7 @@ git clone -b default --single-branch https://github.com/AutoCONFIG/minieap-openw
 #git clone https://github.com/xiaorouji/openwrt-passwall2 package/apps/luci-app-passwall2
 #git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
 
-sed -i 's/@arm +wget/+wget/g' package/apps/luci-app-xunlei/Makefile
+#sed -i 's/@arm +wget/+wget/g' package/apps/luci-app-xunlei/Makefile
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
