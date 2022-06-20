@@ -43,7 +43,6 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-rebootschedul
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome package/apps/luci-app-adguardhome
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-iptvhelper package/apps/luci-app-iptvhelper
 svn co https://github.com/kiddin9/openwrt-packages/trunk/iptvhelper package/apps/iptvhelper
-
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter package/apps/luci-app-dnsfilter
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-usb3disable package/apps/luci-app-usb3disable
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-xunlei package/apps/luci-app-xunlei
@@ -55,6 +54,9 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/LingTiGameAcc package/a
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gost package/apps/luci-app-gost
 svn co https://github.com/kiddin9/openwrt-packages/trunk/gost package/apps/gost
 svn co https://github.com/kiddin9/openwrt-packages/trunk/MentoHUST-OpenWrt-ipk package/apps/mentohust
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-xunyou package/apps/luci-app-xunyou
+svn co https://github.com/kiddin9/openwrt-packages/trunk/xunyou package/apps/xunyou
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-opkg package/apps/luci-app-opkg
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-minieap package/apps/luci-app-minieap
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mentohust package/apps/luci-app-mentohust
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-airwhu package/apps/luci-app-airwhu
