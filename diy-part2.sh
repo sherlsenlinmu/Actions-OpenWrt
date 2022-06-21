@@ -49,8 +49,8 @@ svn co  https://github.com/kiddin9/openwrt-packages/trunk/luci-app-xunlei packag
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-rssi package/apps/luci-app-ledtrig-rssi
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-usbport package/apps/luci-app-ledtrig-usbport
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-switch package/apps/luci-app-ledtrig-switch
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-LingTiGameAcc package/apps/luci-app-LingTiGameAcc
-svn co https://github.com/kiddin9/openwrt-packages/trunk/LingTiGameAcc package/apps/LingTiGameAcc
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-LingTiGameAcc package/luci-app-LingTiGameAcc
+svn co https://github.com/kiddin9/openwrt-packages/trunk/LingTiGameAcc package/LingTiGameAcc
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gost package/apps/luci-app-gost
 svn co https://github.com/kiddin9/openwrt-packages/trunk/gost package/apps/gost
 svn co https://github.com/kiddin9/openwrt-packages/trunk/MentoHUST-OpenWrt-ipk package/apps/mentohust
