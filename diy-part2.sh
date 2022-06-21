@@ -59,8 +59,8 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/xunyou package/apps/xun
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-opkg package/apps/luci-app-opkg
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-eqos package/apps/luci-app-eqos
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-minieap package/apps/luci-app-minieap
-#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mentohust package/apps/luci-app-mentohust
-#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-airwhu package/apps/luci-app-airwhu
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mentohust package/apps/luci-app-mentohust
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-airwhu package/apps/luci-app-airwhu
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-nginx-manager package/apps/luci-app-nginx-manager
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/apps/adguardhome
 
