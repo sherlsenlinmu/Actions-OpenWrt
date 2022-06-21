@@ -71,7 +71,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mosdns package
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsmasq-ipset package/apps/luci-app-dnsmasq-ipset
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-supervisord package/apps/luci-app-supervisord
-svn co https://github.com/kenzok8/small-package/trunk/luci-proto-minieap package/apps/luci-proto-minieap
+#svn co https://github.com/kenzok8/small-package/trunk/luci-proto-minieap package/apps/luci-proto-minieap
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
 #svn co https://github.com/kenzok8/small-package/trunk/luci-app-minieap package/apps/luci-app-minieap
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-nginx-manager package/apps/luci-app-nginx-manager
