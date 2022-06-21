@@ -64,15 +64,15 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-airwhu package
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-nginx-manager package/apps/luci-app-nginx-manager
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/apps/adguardhome
 
-svn co https://github.com/kenzok8/small-package/trunk/luci-app-godproxy package/apps/luci-app-godproxy
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ikoolproxy package/apps/luci-app-ikoolproxy
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-argonne package/apps/luci-theme-argonne
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-argonne-config package/apps/luci-app-argonne-config
-svn co https://github.com/kenzok8/small-package/trunk/luci-app-mosdns package/apps/luci-app-mosdns
-svn co https://github.com/kenzok8/small-package/trunk/luci-app-dnsmasq-ipset package/apps/luci-app-dnsmasq-ipset
-svn co https://github.com/kenzok8/small-package/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
-svn co https://github.com/kenzok8/small-package/trunk/luci-app-supervisord package/apps/luci-app-supervisord
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mosdns package/apps/luci-app-mosdns
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsmasq-ipset package/apps/luci-app-dnsmasq-ipset
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-supervisord package/apps/luci-app-supervisord
 svn co https://github.com/kenzok8/small-package/trunk/luci-proto-minieap package/apps/luci-proto-minieap
-svn co https://github.com/kenzok8/small-package/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
 #svn co https://github.com/kenzok8/small-package/trunk/luci-app-minieap package/apps/luci-app-minieap
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-nginx-manager package/apps/luci-app-nginx-manager
 #svn co https://github.com/kenzok8/small-package/trunk/luci-app-mentohust package/apps/luci-app-mentohust
