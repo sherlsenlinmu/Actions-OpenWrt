@@ -60,7 +60,6 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-eqos package/a
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-minieap package/apps/luci-app-minieap
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mentohust package/apps/luci-app-mentohust
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mosdns package/apps/luci-app-mosdns
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsmasq-ipset package/apps/luci-app-dnsmasq-ipset
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-supervisord package/apps/luci-app-supervisord
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
