@@ -56,7 +56,6 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-minieap packag
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mentohust package/apps/luci-app-mentohust
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mosdns package/apps/luci-app-mosdns
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ikoolproxy package/apps/luci-app-ikoolproxy
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-airwhu package/apps/luci-app-airwhu
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/apps/adguardhome
@@ -70,9 +69,6 @@ git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall 
 git clone -b default --single-branch https://github.com/AutoCONFIG/minieap-openwrt.git package/apps/minieap-openwrt
 #git clone https://github.com/xiaorouji/openwrt-passwall2 package/apps/luci-app-passwall2
 #git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
-
-# luci-app-xunlei
-sed -i 's/@arm +wget/+wget/g' package/apps/luci-app-xunlei/Makefile
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
