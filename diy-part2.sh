@@ -57,7 +57,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mentohust pack
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mosdns package/apps/luci-app-mosdns
 svn co https://github.com/sbwml/luci-app-mosdns/trunk/luci-app-mosdns package/apps/luci-app-mosdns 
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
-#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ikoolproxy package/apps/luci-app-ikoolproxy
+svn co https://github.com/kenzok8/small-package/trunk/luci-app-ikoolproxy package/apps/luci-app-ikoolproxy
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-airwhu package/apps/luci-app-airwhu
 svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/apps/adguardhome
 
