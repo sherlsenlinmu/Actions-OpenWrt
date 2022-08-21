@@ -74,7 +74,7 @@ git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall 
 #git clone https://github.com/xiaorouji/openwrt-passwall2 package/apps/luci-app-passwall2
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
 git clone https://github.com/kiddin9/openwrt-bypass package/apps/openwrt-bypass
-git clone https://github.com/kiddin9/luci-theme-edge package/apps/luci-theme-edge
+#git clone https://github.com/kiddin9/luci-theme-edge package/apps/luci-theme-edge
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-wxedge package/apps/luci-app-wxedge
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-iform package/apps/luci-lib-iform
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-speedtest-web package/apps/luci-app-speedtest-web
