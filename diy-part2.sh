@@ -55,6 +55,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/gost package/apps/gost
 svn co https://github.com/kiddin9/openwrt-packages/trunk/MentoHUST-OpenWrt-ipk package/apps/mentohust
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-eqos package/apps/luci-app-eqos
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-minieap package/apps/luci-app-minieap
+svn co https://github.com/kiddin9/openwrt-packages/trunk/openwrt-minieap package/apps/openwrt-minieap
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mentohust package/apps/luci-app-mentohust
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mosdns package/apps/luci-app-mosdns
 svn co https://github.com/sbwml/luci-app-mosdns/trunk/luci-app-mosdns package/apps/luci-app-mosdns 
@@ -69,7 +70,7 @@ svn co https://github.com/kenzok8/small-package/trunk/luci-app-nginx-manager pac
 
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
-git clone -b default --single-branch https://github.com/AutoCONFIG/minieap-openwrt package/apps/minieap-openwrt
+#git clone -b default --single-branch https://github.com/AutoCONFIG/minieap-openwrt package/apps/minieap-openwrt
 #git clone https://github.com/xiaorouji/openwrt-passwall2 package/apps/luci-app-passwall2
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
 git clone https://github.com/kiddin9/openwrt-bypass package/apps/openwrt-bypass
