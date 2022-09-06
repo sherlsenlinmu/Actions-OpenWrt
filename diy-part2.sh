@@ -17,6 +17,7 @@ rm -rf feeds/luci/applications/luci-app-zerotier
 #rm -rf feeds/luci/applications/luci-app-easymesh
 rm -rf feeds/packages/net/adguardhome
 rm -rf package/lean/mentohust
+rm -rf feeds/luci/applications/luci-app-socat
 
 # autocore
 sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefile
@@ -25,7 +26,7 @@ sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40x
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
-sed -i 's/R22.9.1/R22.9.3/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R22.9.1/R22.9.6/g' package/lean/default-settings/files/zzz-default-settings
 #sed -i 's#root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
 sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 
@@ -39,7 +40,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced pack
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-weburl package/apps/luci-app-control-weburl
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-rebootschedule package/apps/luci-app-rebootschedule
-#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package/apps/luci-app-socat
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package/apps/luci-app-socat
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolproxyR package/apps/luci-app-koolproxyR
 
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome package/apps/luci-app-adguardhome
@@ -53,7 +54,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-switch
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gost package/apps/luci-app-gost
 svn co https://github.com/kiddin9/openwrt-packages/trunk/gost package/apps/gost
 svn co https://github.com/kiddin9/openwrt-packages/trunk/MentoHUST-OpenWrt-ipk package/apps/mentohust
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-eqos package/apps/luci-app-eqos
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-eqos package/apps/luci-app-eqos
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-minieap package/apps/luci-app-minieap
 svn co https://github.com/kiddin9/openwrt-packages/trunk/openwrt-minieap package/apps/openwrt-minieap
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mentohust package/apps/luci-app-mentohust
@@ -64,8 +65,9 @@ svn co https://github.com/kenzok8/small-package/trunk/luci-app-ikoolproxy packag
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-airwhu package/apps/luci-app-airwhu
 svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/apps/adguardhome
 
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-argonne package/apps/luci-theme-argonne
-svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-argonne-config package/apps/luci-app-argonne-config
+#svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-argonne package/apps/luci-theme-argonne
+#svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-argonne-config package/apps/luci-app-argonne-config
+svn co https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-argon-config package/apps/luci-app-argon-config
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-nginx-manager package/apps/luci-app-nginx-manager
 
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
