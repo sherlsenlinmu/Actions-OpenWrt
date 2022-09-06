@@ -67,7 +67,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/app
 
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-argonne package/apps/luci-theme-argonne
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-argonne-config package/apps/luci-app-argonne-config
-svn co https://github.com/kiddin9/openwrt-packages/tree/master/luci-app-argon-config package/apps/luci-app-argon-config
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-argon-config package/apps/luci-app-argon-config
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-nginx-manager package/apps/luci-app-nginx-manager
 
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
