@@ -76,7 +76,6 @@ git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall 
 #git clone https://github.com/xiaorouji/openwrt-passwall2 package/apps/luci-app-passwall2
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
 git clone https://github.com/kiddin9/openwrt-bypass package/apps/openwrt-bypass
-svn co https://github.com/openwrt/luci/trunk/libs/luci-lib-ipkg package/apps/luci-lib-ipkg
 #git clone https://github.com/kiddin9/luci-theme-edge package/apps/luci-theme-edge
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-wxedge package/apps/luci-app-wxedge
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-iform package/apps/luci-lib-iform
@@ -87,6 +86,8 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-xterm package/
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-speedtest-web package/apps/luci-app-speedtest-web
 svn co https://github.com/kiddin9/openwrt-packages/trunk/speedtest-web package/apps/speedtest-web
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ttnode package/apps/luci-app-ttnode
+
+sed -i 's/luci-compat +luci-lib-ipkg +unzip +lua-maxminddb/luci-compat +unzip +lua-maxminddb/g' package/apps/openwrt-bypass/luci-app-bypass/Makefile
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
