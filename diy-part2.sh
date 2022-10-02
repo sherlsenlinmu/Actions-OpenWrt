@@ -82,14 +82,14 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-iform package/
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-taskd package/apps/luci-lib-taskd
 svn co https://github.com/kiddin9/openwrt-packages/trunk/taskd package/apps/taskd
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-xterm package/apps/luci-lib-xterm
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-lib-ipkg package/apps/luci-lib-ipkg
+#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-lib-ipkg package/apps/luci-lib-ipkg
 
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-speedtest-web package/apps/luci-app-speedtest-web
 svn co https://github.com/kiddin9/openwrt-packages/trunk/speedtest-web package/apps/speedtest-web
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ttnode package/apps/luci-app-ttnode
 
 #luci-app-bypass
-#sed -i 's/luci-compat +luci-lib-ipkg +unzip +lua-maxminddb/luci-compat +unzip +lua-maxminddb/g' package/apps/openwrt-bypass/luci-app-bypass/Makefile
+sed -i 's/luci-compat +luci-lib-ipkg +unzip +lua-maxminddb/luci-compat +unzip +lua-maxminddb/g' package/apps/openwrt-bypass/luci-app-bypass/Makefile
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
