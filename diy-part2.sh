@@ -26,7 +26,7 @@ sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40x
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
-sed -i 's/R22.9.1/R22.10.1/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R22.9.1/R22.10.2/g' package/lean/default-settings/files/zzz-default-settings
 #sed -i 's#root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
 sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 
@@ -34,7 +34,6 @@ sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
 svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/apps/luci-app-amlogic
 svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser package/apps/luci-app-filebrowser
-
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-smartdns package/apps/luci-app-smartdns
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced package/apps/luci-app-advanced
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
@@ -42,15 +41,14 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-webur
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-rebootschedule package/apps/luci-app-rebootschedule
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package/apps/luci-app-socat
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-koolproxyR package/apps/luci-app-koolproxyR
-
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome package/apps/luci-app-adguardhome
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-iptvhelper package/apps/luci-app-iptvhelper
 svn co https://github.com/kiddin9/openwrt-packages/trunk/iptvhelper package/apps/iptvhelper
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter package/apps/luci-app-dnsfilter
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-usb3disable package/apps/luci-app-usb3disable
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-rssi package/apps/luci-app-ledtrig-rssi
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-usbport package/apps/luci-app-ledtrig-usbport
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-switch package/apps/luci-app-ledtrig-switch
+#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-rssi package/apps/luci-app-ledtrig-rssi
+#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-usbport package/apps/luci-app-ledtrig-usbport
+#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ledtrig-switch package/apps/luci-app-ledtrig-switch
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gost package/apps/luci-app-gost
 svn co https://github.com/kiddin9/openwrt-packages/trunk/gost package/apps/gost
 svn co https://github.com/kiddin9/openwrt-packages/trunk/MentoHUST-OpenWrt-ipk package/apps/mentohust
@@ -64,12 +62,10 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server p
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-ikoolproxy package/apps/luci-app-ikoolproxy
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-airwhu package/apps/luci-app-airwhu
 svn co https://github.com/kiddin9/openwrt-packages/trunk/adguardhome package/apps/adguardhome
-
 #svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-theme-argonne package/apps/luci-theme-argonne
 svn co https://github.com/kenzok8/openwrt-packages/trunk/luci-app-argonne-config package/apps/luci-app-argonne-config
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-argon-config package/apps/luci-app-argon-config
 svn co https://github.com/kenzok8/small-package/trunk/luci-app-nginx-manager package/apps/luci-app-nginx-manager
-
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
 #git clone -b default --single-branch https://github.com/AutoCONFIG/minieap-openwrt package/apps/minieap-openwrt
@@ -83,7 +79,6 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-taskd package/
 svn co https://github.com/kiddin9/openwrt-packages/trunk/taskd package/apps/taskd
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-xterm package/apps/luci-lib-xterm
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-lib-ipkg package/apps/luci-lib-ipkg
-
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-speedtest-web package/apps/luci-app-speedtest-web
 svn co https://github.com/kiddin9/openwrt-packages/trunk/speedtest-web package/apps/speedtest-web
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ttnode package/apps/luci-app-ttnode
