@@ -10,7 +10,7 @@
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
 # 5.4内核
-#sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/armvirt/Makefile
+sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/armvirt/Makefile
 
 # 删除软件包
 rm -rf feeds/luci/applications/luci-app-zerotier
@@ -26,7 +26,7 @@ sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40x
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
-sed -i 's/R22.9.1/R22.10.2/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R22.9.1/R22.10.9/g' package/lean/default-settings/files/zzz-default-settings
 #sed -i 's#root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/lean/default-settings/files/zzz-default-settings
 sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 
@@ -84,7 +84,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/speedtest-web package/a
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ttnode package/apps/luci-app-ttnode
 
 #luci-app-bypass
-sed -i 's/luci-compat +luci-lib-ipkg +unzip +lua-maxminddb/luci-compat +unzip +lua-maxminddb/g' package/apps/openwrt-bypass/luci-app-bypass/Makefile
+#sed -i 's/luci-compat +luci-lib-ipkg +unzip +lua-maxminddb/luci-compat +unzip +lua-maxminddb/g' package/apps/openwrt-bypass/luci-app-bypass/Makefile
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/apps/luci-app-easymesh
