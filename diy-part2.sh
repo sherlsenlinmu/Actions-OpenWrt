@@ -82,6 +82,8 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-xterm package/
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-speedtest-web package/apps/luci-app-speedtest-web
 svn co https://github.com/kiddin9/openwrt-packages/trunk/speedtest-web package/apps/speedtest-web
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ttnode package/apps/luci-app-ttnode
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/lucky-openwrt package/apps/lucky-openwrt
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-ddns-go package/apps/luci-app-ddns-go
 
 #luci-app-bypass
 #sed -i 's/luci-compat +luci-lib-ipkg +unzip +lua-maxminddb/luci-compat +unzip +lua-maxminddb/g' package/apps/openwrt-bypass/luci-app-bypass/Makefile
