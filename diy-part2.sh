@@ -82,7 +82,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-xterm package/
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-speedtest-web package/apps/luci-app-speedtest-web
 svn co https://github.com/kiddin9/openwrt-packages/trunk/speedtest-web package/apps/speedtest-web
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ttnode package/apps/luci-app-ttnode
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/lucky-openwrt package/apps/lucky-openwrt
+git clone https://github.com/sirpdboy/luci-app-lucky.git package/apps/lucky-openwrt
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-ddns-go package/apps/luci-app-ddns-go
 
 #luci-app-bypass
