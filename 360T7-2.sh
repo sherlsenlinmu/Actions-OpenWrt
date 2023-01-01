@@ -9,8 +9,6 @@
 # File name: diy-part2.sh
 # Description: OpenWrt DIY script part 2 (After Update feeds)
 #
-# 5.4内核
-#sed -i 's/KERNEL_PATCHVER:=5.10/KERNEL_PATCHVER:=5.4/g' target/linux/armvirt/Makefile
 
 # 删除软件包
 rm -rf feeds/luci/applications/luci-app-zerotier
