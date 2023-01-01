@@ -27,5 +27,3 @@ echo 'sed -i '/DISTRIB_DESCRIPTION/d' /etc/openwrt_release' >>package/emortal/de
 echo 'echo "DISTRIB_DESCRIPTION='ImmortalWrt '" >> /etc/openwrt_release' >>package/emortal/default-settings/files/99-default-settings
 echo ' ' >>package/emortal/default-settings/files/99-default-settings
 echo 'exit 0' >>package/emortal/default-settings/files/99-default-settings
-
-
