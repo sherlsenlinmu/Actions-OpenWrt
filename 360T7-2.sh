@@ -13,7 +13,6 @@
 # 删除软件包
 rm -rf feeds/luci/applications/luci-app-zerotier
 rm -rf feeds/luci/applications/luci-app-socat
-rm -rf feeds/luci/themes/luci-theme-material
 
 # Modify default
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
@@ -33,7 +32,6 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pushbot packag
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-guest-wifi package/apps/luci-app-guest-wifi
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ipsec-server package/apps/luci-app-ipsec-server
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
-svn co https://github.com/coolsnowwolf/luci/trunk/themes/luci-theme-material feeds/luci/themes/luci-theme-material
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
