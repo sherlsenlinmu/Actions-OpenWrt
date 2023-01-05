@@ -41,7 +41,6 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter pack
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pptp-server package/apps/luci-app-pptp-server
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pushbot package/apps/luci-app-pushbot
-#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-guest-wifi package/apps/luci-app-guest-wifi
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ipsec-server package/apps/luci-app-ipsec-server
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
