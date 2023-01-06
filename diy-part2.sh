@@ -56,7 +56,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gost package/a
 svn co https://github.com/kiddin9/openwrt-packages/trunk/gost package/apps/gost
 git clone https://github.com/sherlsenlinmu/luci-app-eqos package/apps/luci-app-eqos
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-minieap package/apps/luci-app-minieap
-svn co https://github.com/kiddin9/openwrt-packages/trunk/openwrt-minieap package/apps/openwrt-minieap
+svn co https://github.com/kiddin9/openwrt-packages/trunk/minieap-openwrt package/apps/minieap-openwrt
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mosdns package/apps/luci-app-mosdns
 svn co https://github.com/sbwml/luci-app-mosdns/trunk/luci-app-mosdns package/apps/luci-app-mosdns 
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pppoe-server package/apps/luci-app-pppoe-server
@@ -69,6 +69,7 @@ git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passw
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-bypass package/apps/openwrt-bypass
+svn co https://github.com/kiddin9/openwrt-packages/trunk/lua-maxminddb  package/apps/lua-maxminddb
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-wxedge package/apps/luci-app-wxedge
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-iform package/apps/luci-lib-iform
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-taskd package/apps/luci-lib-taskd
