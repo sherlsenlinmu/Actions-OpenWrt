@@ -18,12 +18,3 @@
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git routing https://git.openwrt.org/feed/routing.git^fffa9cb161acee226f1080cda2a3d53ded656f14' >>feeds.conf.default
 #echo 'src-git packages https://github.com/coolsnowwolf/packages.git^fd95b1a5f9c1130339c4e61bc6061ae55e04220d' >>feeds.conf.default
-
-# 99-default-settings
-#sed -i '29d' package/emortal/default-settings/files/99-default-settings
-#echo 'sed -i '/DISTRIB_REVISION/d' /etc/openwrt_release' >>package/emortal/default-settings/files/99-default-settings
-#echo 'echo "DISTRIB_REVISION='R23.1.1'" >> /etc/openwrt_release' >>package/emortal/default-settings/files/99-default-settings
-#echo 'sed -i '/DISTRIB_DESCRIPTION/d' /etc/openwrt_release' >>package/emortal/default-settings/files/99-default-settings
-#echo 'echo "DISTRIB_DESCRIPTION='ImmortalWrt '" >> /etc/openwrt_release' >>package/emortal/default-settings/files/99-default-settings
-#echo ' ' >>package/emortal/default-settings/files/99-default-settings
-#echo 'exit 0' >>package/emortal/default-settings/files/99-default-settings
