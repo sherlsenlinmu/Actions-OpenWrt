@@ -75,8 +75,9 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-iform package/
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-taskd package/apps/luci-lib-taskd
 svn co https://github.com/kiddin9/openwrt-packages/trunk/taskd package/apps/taskd
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-xterm package/apps/luci-lib-xterm
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-speedtest-web package/apps/luci-app-speedtest-web
-svn co https://github.com/kiddin9/openwrt-packages/trunk/speedtest-web package/apps/speedtest-web
+#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-speedtest-web package/apps/luci-app-speedtest-web
+#svn co https://github.com/kiddin9/openwrt-packages/trunk/speedtest-web package/apps/speedtest-web
+svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netspeedtest package/apps/netspeedtest 
 git clone https://github.com/sirpdboy/luci-app-lucky package/apps/luci-app-lucky
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-ddns-go package/apps/luci-app-ddns-go
 #svn co https://github.com/sherlsenlinmu/lede/trunk/package/lean/autosamba package/lean/autosamba
