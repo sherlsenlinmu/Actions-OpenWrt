@@ -83,6 +83,8 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-ddns-go packa
 #svn co https://github.com/sherlsenlinmu/lede/trunk/package/lean/autosamba package/lean/autosamba
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-msd_lite package/apps/luci-app-msd_lite
 svn co https://github.com/kiddin9/openwrt-packages/trunk/msd_lite package/apps/msd_lite
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-alist package/apps/luci-app-alist
+svn co https://github.com/kiddin9/openwrt-packages/trunk/alist package/apps/alist
 
 # 晶晨宝盒
 sed -i "s|https.*/amlogic-s9xxx-openwrt|https://github.com/breakings/OpenWrt|g" package/apps/luci-app-amlogic/root/etc/config/amlogic
