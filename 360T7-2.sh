@@ -15,6 +15,7 @@ rm -rf feeds/luci/applications/luci-app-zerotier
 #rm -rf feeds/luci/applications/luci-app-socat
 rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-ssr-plus
+rm -rf feeds/luci/applications/luci-app-msd_lite
 
 # Modify default
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
@@ -45,6 +46,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ipsec-server p
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-msd_lite package/apps/luci-app-msd_lite
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
