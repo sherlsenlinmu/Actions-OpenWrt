@@ -43,8 +43,8 @@ svn co https://github.com/Lienol/openwrt-package/trunk/luci-app-filebrowser pack
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-smartdns package/apps/luci-app-smartdns
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-advanced package/apps/luci-app-advanced
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
-svn co sherlsenlinmu/apps/trunk/luci-app-control-weburl package/apps/luci-app-control-weburl
-svn co sherlsenlinmu/apps/trunk/luci-app-rebootschedule package/apps/luci-app-rebootschedule
+svn co https://github.com/sherlsenlinmu/apps/trunk/luci-app-control-weburl package/apps/luci-app-control-weburl
+svn co https://github.com/sherlsenlinmu/apps/trunk/luci-app-rebootschedule package/apps/luci-app-rebootschedule
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package/apps/luci-app-socat
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-speedlimit package/apps/luci-app-control-speedlimit
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome package/apps/luci-app-adguardhome
@@ -54,7 +54,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter pack
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-usb3disable package/apps/luci-app-usb3disable
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gost package/apps/luci-app-gost
 svn co https://github.com/kiddin9/openwrt-packages/trunk/gost package/apps/gost
-svn co sherlsenlinmu/apps/trunk/luci-app-eqos package/apps/luci-app-eqos
+svn co https://github.com/sherlsenlinmu/apps/trunk/luci-app-eqos package/apps/luci-app-eqos
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-minieap package/apps/luci-app-minieap
 svn co https://github.com/kiddin9/openwrt-packages/trunk/minieap-openwrt package/apps/minieap-openwrt
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-mosdns package/apps/luci-app-mosdns
