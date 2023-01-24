@@ -15,7 +15,7 @@
 # 删除软件包
 rm -rf feeds/luci/applications/luci-app-zerotier
 rm -rf feeds/luci/applications/luci-app-socat
-#rm -rf package/lean/autosamba
+rm -rf package/lean/autosamba
 
 # autocore
 sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefile
@@ -80,7 +80,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-xterm package/
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netspeedtest package/apps/netspeedtest 
 git clone https://github.com/sirpdboy/luci-app-lucky package/apps/luci-app-lucky
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-ddns-go package/apps/luci-app-ddns-go
-#svn co https://github.com/sherlsenlinmu/lede/trunk/package/lean/autosamba package/lean/autosamba
+svn co https://github.com/sherlsenlinmu/lede/trunk/package/lean/autosamba package/lean/autosamba
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-msd_lite package/apps/luci-app-msd_lite
 svn co https://github.com/kiddin9/openwrt-packages/trunk/msd_lite package/apps/msd_lite
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset package/apps/luci-app-autotimeset
