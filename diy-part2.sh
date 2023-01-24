@@ -15,7 +15,7 @@
 # 删除软件包
 rm -rf feeds/luci/applications/luci-app-zerotier
 rm -rf feeds/luci/applications/luci-app-socat
-rm -rf package/lean/autosamba
+#rm -rf package/lean/autosamba
 
 # autocore
 sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefile
@@ -48,8 +48,8 @@ svn co https://github.com/sherlsenlinmu/apps/trunk/luci-app-rebootschedule packa
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-socat package/apps/luci-app-socat
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-speedlimit package/apps/luci-app-control-speedlimit
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome package/apps/luci-app-adguardhome
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-iptvhelper package/apps/luci-app-iptvhelper
-svn co https://github.com/kiddin9/openwrt-packages/trunk/iptvhelper package/apps/iptvhelper
+#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-iptvhelper package/apps/luci-app-iptvhelper
+#svn co https://github.com/kiddin9/openwrt-packages/trunk/iptvhelper package/apps/iptvhelper
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter package/apps/luci-app-dnsfilter
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-usb3disable package/apps/luci-app-usb3disable
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-gost package/apps/luci-app-gost
@@ -77,10 +77,10 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/taskd package/apps/task
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-xterm package/apps/luci-lib-xterm
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-speedtest-web package/apps/luci-app-speedtest-web
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/speedtest-web package/apps/speedtest-web
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netspeedtest package/apps/netspeedtest 
+#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/netspeedtest package/apps/netspeedtest 
 git clone https://github.com/sirpdboy/luci-app-lucky package/apps/luci-app-lucky
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-ddns-go package/apps/luci-app-ddns-go
-svn co https://github.com/sherlsenlinmu/lede/trunk/package/lean/autosamba package/lean/autosamba
+#svn co https://github.com/sherlsenlinmu/lede/trunk/package/lean/autosamba package/lean/autosamba
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-msd_lite package/apps/luci-app-msd_lite
 svn co https://github.com/kiddin9/openwrt-packages/trunk/msd_lite package/apps/msd_lite
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset package/apps/luci-app-autotimeset
