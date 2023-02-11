@@ -11,10 +11,10 @@
 #
 
 # 删除软件包
-rm -rf feeds/luci/applications/luci-app-zerotier
+#rm -rf feeds/luci/applications/luci-app-zerotier
 #rm -rf feeds/luci/applications/luci-app-socat
-rm -rf feeds/luci/applications/luci-app-passwall
-rm -rf feeds/luci/applications/luci-app-ssr-plus
+#rm -rf feeds/luci/applications/luci-app-passwall
+#rm -rf feeds/luci/applications/luci-app-ssr-plus
 rm -rf feeds/luci/applications/luci-app-msd_lite
 
 # Modify default
@@ -43,9 +43,9 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter pack
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pptp-server package/apps/luci-app-pptp-server
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pushbot package/apps/luci-app-pushbot
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ipsec-server package/apps/luci-app-ipsec-server
-git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
-git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
-git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
+#git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
+#git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
+#git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-msd_lite package/apps/luci-app-msd_lite
 
 ./scripts/feeds update -a
