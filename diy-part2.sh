@@ -15,6 +15,7 @@
 # 删除软件包
 rm -rf feeds/luci/applications/luci-app-zerotier
 rm -rf feeds/luci/applications/luci-app-socat
+rm -rf feeds/packages/net/v2ray-geodata
 #rm -rf package/lean/autosamba
 
 # autocore
