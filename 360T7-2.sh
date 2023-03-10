@@ -47,7 +47,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pushbot packag
 #git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 #git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-msd_lite package/apps/luci-app-msd_lite
-svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset package/apps/luci-app-autotimeset
+#svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset package/apps/luci-app-autotimeset
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
