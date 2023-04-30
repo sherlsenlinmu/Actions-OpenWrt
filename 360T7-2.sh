@@ -23,8 +23,8 @@ sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luc
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
 sed -i "s/DISTRIB_ID='%D'/DISTRIB_ID='ImmortalWrt'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/DISTRIB_RELEASE='%V'/DISTRIB_RELEASE=''/g" package/base-files/files/etc/openwrt_release
-sed -i "s/DISTRIB_REVISION='%R'/DISTRIB_REVISION='R23.4.16'/g" package/base-files/files/etc/openwrt_release
-sed -i "s/DISTRIB_DESCRIPTION='%D %V %C'/DISTRIB_DESCRIPTION='ImmortalWrt R23.4.16 '/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_REVISION='%R'/DISTRIB_REVISION='R23.5.1'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_DESCRIPTION='%D %V %C'/DISTRIB_DESCRIPTION='ImmortalWrt R23.5.1 '/g" package/base-files/files/etc/openwrt_release
 sed -i 's/NAME="%D"/NAME="ImmortalWrt"/g' package/base-files/files/usr/lib/os-release
 sed -i 's/VERSION="%V"/VERSION=""/g' package/base-files/files/usr/lib/os-release
 sed -i 's/PRETTY_NAME="%D %V"/PRETTY_NAME="ImmortalWrt"/g' package/base-files/files/usr/lib/os-release
