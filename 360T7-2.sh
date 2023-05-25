@@ -23,14 +23,14 @@ sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luc
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
 sed -i "s/DISTRIB_ID='%D'/DISTRIB_ID='ImmortalWrt'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/DISTRIB_RELEASE='%V'/DISTRIB_RELEASE=''/g" package/base-files/files/etc/openwrt_release
-sed -i "s/DISTRIB_REVISION='%R'/DISTRIB_REVISION='R23.5.1'/g" package/base-files/files/etc/openwrt_release
-sed -i "s/DISTRIB_DESCRIPTION='%D %V %C'/DISTRIB_DESCRIPTION='ImmortalWrt R23.5.1 '/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_REVISION='%R'/DISTRIB_REVISION='R23.5.25'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_DESCRIPTION='%D %V %C'/DISTRIB_DESCRIPTION='ImmortalWrt R23.5.25 '/g" package/base-files/files/etc/openwrt_release
 sed -i 's/NAME="%D"/NAME="ImmortalWrt"/g' package/base-files/files/usr/lib/os-release
 sed -i 's/VERSION="%V"/VERSION=""/g' package/base-files/files/usr/lib/os-release
 sed -i 's/PRETTY_NAME="%D %V"/PRETTY_NAME="ImmortalWrt"/g' package/base-files/files/usr/lib/os-release
 sed -i 's/VERSION_ID="%v"/VERSION_ID=""/g' package/base-files/files/usr/lib/os-release
 sed -i 's/OPENWRT_RELEASE="%D %V %C"/OPENWRT_RELEASE="ImmortalWrt %C"/g' package/base-files/files/usr/lib/os-release
-sed -i 's/%D %V/Base on ImmortalWrt by hanwckf/g' package/base-files/files/etc/banner
+sed -i 's/%D %V/Base on ImmortalWrt by Hanwckf/g' package/base-files/files/etc/banner
 
 # 添加额外软件包
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
