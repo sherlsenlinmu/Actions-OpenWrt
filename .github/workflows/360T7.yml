@@ -20,8 +20,10 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
-  REPO_BRANCH: openwrt-21.02
+  #REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  #REPO_BRANCH: openwrt-21.02
+  REPO_URL: https://github.com/padavanonly/immortalwrtARM.git
+  REPO_BRANCH: mt7981
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: 360T7.config
   DIY_P1_SH: 360T7-1.sh
