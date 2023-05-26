@@ -35,7 +35,7 @@ sed -i 's/VERSION="%V"/VERSION=""/g' package/base-files/files/usr/lib/os-release
 sed -i 's/PRETTY_NAME="%D %V"/PRETTY_NAME="OpenWrt"/g' package/base-files/files/usr/lib/os-release
 sed -i 's/VERSION_ID="%v"/VERSION_ID=""/g' package/base-files/files/usr/lib/os-release
 sed -i 's/OPENWRT_RELEASE="%D %V %C"/OPENWRT_RELEASE="OpenWrt %C"/g' package/base-files/files/usr/lib/os-release
-sed -i 's/%D %V/Base on OpenWrt by lean/g' package/base-files/files/etc/banner
+sed -i 's/%D %V/Base on OpenWrt by Lean/g' package/base-files/files/etc/banner
 
 # 添加额外软件包
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
