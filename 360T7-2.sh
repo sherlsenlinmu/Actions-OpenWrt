@@ -18,7 +18,7 @@ rm -rf feeds/luci/applications/luci-app-passwall
 rm -rf feeds/luci/applications/luci-app-msd_lite
 rm -rf feeds/packages/net/xray-core
 rm -rf feeds/packages/net/chinadns-ng
-rm -rf feeds/packages/net/v2ray-plugin
+#rm -rf feeds/packages/net/v2ray-plugin
 
 # Modify default
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
@@ -55,7 +55,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset p
 svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall feeds/luci/applications/luci-app-passwall
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core feeds/packages/net/xray-core
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng feeds/packages/net/chinadns-ng
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/v2ray-plugin feeds/packages/net/v2ray-plugin
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
