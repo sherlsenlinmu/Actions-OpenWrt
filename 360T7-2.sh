@@ -12,9 +12,7 @@
 
 # 删除软件包
 rm -rf feeds/luci/applications/luci-app-zerotier
-rm -rf feeds/luci/applications/luci-app-socat
 rm -rf feeds/luci/applications/luci-app-passwall
-#rm -rf feeds/luci/applications/luci-app-ssr-plus
 rm -rf feeds/luci/applications/luci-app-msd_lite
 rm -rf feeds/packages/net/xray-core
 rm -rf feeds/packages/net/chinadns-ng
@@ -54,7 +52,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/msd_lite package/apps/m
 svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall feeds/luci/applications/luci-app-passwall
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core feeds/packages/net/xray-core
 svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng feeds/packages/net/chinadns-ng
-
+svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
