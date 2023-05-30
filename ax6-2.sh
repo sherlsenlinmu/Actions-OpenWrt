@@ -73,7 +73,6 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-msd_lite packa
 svn co https://github.com/kiddin9/openwrt-packages/trunk/msd_lite package/apps/msd_lite
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset package/apps/luci-app-autotimeset
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pptp-server package/apps/luci-app-pptp-server
-svn co https://github.com/kiddin9/openwrt-packages/trunk/v2ray-plugin package/apps/passwall/v2ray-plugin
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
