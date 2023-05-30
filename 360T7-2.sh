@@ -54,7 +54,7 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-msd_lite packa
 svn co https://github.com/kiddin9/openwrt-packages/trunk/msd_lite package/apps/msd_lite
 #svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/apps/luci-app-passwall
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core package/apps/xray-core
-svn co https://github.com/kiddin9/openwrt-packages/trunk/v2ray-plugin package/apps/v2ray-plugin
+#svn co https://github.com/kiddin9/openwrt-packages/trunk/v2ray-plugin package/apps/v2ray-plugin
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/apps/chinadns-ng
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-unblockmusic package/apps/luci-app-unblockmusic
