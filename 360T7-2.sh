@@ -13,9 +13,10 @@
 # 删除软件包
 rm -rf feeds/luci/applications/luci-app-zerotier
 rm -rf feeds/luci/applications/luci-app-passwall
-rm -rf feeds/luci/applications/luci-app-msd_lite
+rm -rf feeds/luci/applications/luci-app-openclash
 rm -rf feeds/packages/net/xray-core
 rm -rf feeds/packages/net/chinadns-ng
+rm -rf feeds/packages/net/v2ray-plugin
 
 # Modify default
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
@@ -45,13 +46,14 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pptp-server pa
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pushbot package/apps/luci-app-pushbot
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ipsec-server package/apps/luci-app-ipsec-server
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
-#git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
-#git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
+git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
+git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-msd_lite package/apps/luci-app-msd_lite
 svn co https://github.com/kiddin9/openwrt-packages/trunk/msd_lite package/apps/msd_lite
-svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall feeds/luci/applications/luci-app-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core feeds/packages/net/xray-core
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng feeds/packages/net/chinadns-ng
+#svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/apps/luci-app-passwall
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core package/apps/xray-core
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/v2ray-plugin package/apps/v2ray-plugin
+svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/apps/chinadns-ng
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
 
 ./scripts/feeds update -a
