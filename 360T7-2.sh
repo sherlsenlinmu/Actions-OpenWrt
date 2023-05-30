@@ -51,9 +51,9 @@ git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall 
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-msd_lite package/apps/luci-app-msd_lite
 svn co https://github.com/kiddin9/openwrt-packages/trunk/msd_lite package/apps/msd_lite
 #svn co https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall package/apps/luci-app-passwall
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core package/apps/xray-core
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/v2ray-plugin package/apps/v2ray-plugin
-svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/apps/chinadns-ng
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/xray-core package/apps/xray-core
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/v2ray-plugin package/apps/v2ray-plugin
+#svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/apps/chinadns-ng
 svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
 
 ./scripts/feeds update -a
