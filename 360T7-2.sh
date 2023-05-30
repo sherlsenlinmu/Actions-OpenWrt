@@ -36,7 +36,7 @@ sed -i 's/%D %V/Base on ImmortalWrt by Hanwckf/g' package/base-files/files/etc/b
 # 添加额外软件包
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
 svn co https://github.com/kiddin9/openwrt-packages/trunk/wol package/apps/wol
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-control-weburl package/apps/luci-app-control-weburl
+svn co https://github.com/sherlsenlinmu/apps/trunk/luci-app-control-weburl package/apps/luci-app-control-weburl
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-speedlimit package/apps/luci-app-control-speedlimit
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-smartdns package/apps/luci-app-smartdns
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset package/apps/luci-app-autotimeset
