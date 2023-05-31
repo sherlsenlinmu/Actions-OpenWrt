@@ -64,8 +64,8 @@ svn co https://github.com/coolsnowwolf/packages/trunk/net/zerotier feeds/package
 svn co https://github.com/coolsnowwolf/packages/trunk/net/smartdns feeds/packages/net/smartdns
 git clone -b packages --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/passwall
 git clone -b luci --single-branch https://github.com/xiaorouji/openwrt-passwall package/apps/luci-app-passwall
-rm -rf package/apps/passwall/xray-core
-rm -rf package/apps/passwall/v2ray-plugin
+#rm -rf package/apps/passwall/xray-core
+#rm -rf package/apps/passwall/v2ray-plugin
 git clone https://github.com/rufengsuixing/luci-app-zerotier package/lean/luci-app-zerotier
 #git clone -b default --single-branch https://github.com/AutoCONFIG/minieap-openwrt.git package/apps/minieap-openwrt
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
@@ -75,8 +75,8 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-msd_lite packa
 svn co https://github.com/kiddin9/openwrt-packages/trunk/msd_lite package/apps/msd_lite
 svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset package/apps/luci-app-autotimeset
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pptp-server package/apps/luci-app-pptp-server
-svn co https://github.com/sherlsenlinmu/apps/trunk/xray-core package/apps/passwall/xray-core
-svn co https://github.com/sherlsenlinmu/apps/trunk/v2ray-plugin package/apps/passwall/v2ray-plugin
+#svn co https://github.com/sherlsenlinmu/apps/trunk/xray-core package/apps/passwall/xray-core
+#svn co https://github.com/sherlsenlinmu/apps/trunk/v2ray-plugin package/apps/passwall/v2ray-plugin
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
