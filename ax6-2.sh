@@ -77,7 +77,7 @@ svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-autotimeset p
 svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-pptp-server package/apps/luci-app-pptp-server
 #svn co https://github.com/sherlsenlinmu/apps/trunk/xray-core package/apps/passwall/xray-core
 #svn co https://github.com/sherlsenlinmu/apps/trunk/v2ray-plugin package/apps/passwall/v2ray-plugin
-sed -i 's/73a2498dc95934c225d358707e7f7d060b5ce81aa45260ada09cbd15207d27d1/5279eb1cb7555cf9292423cc9f672dc43e6e214b3411a6df26a6a1cfa59d88b7/g' package/apps/passwall/ipt2socks/Makefile
+sed -i 's/73a2498dc95934c225d358707e7f7d060b5ce81aa45260ada09cbd15207d27d1/5279eb1cb7555cf9292423cc9f672dc43e6e214b3411a6df26a6a1cfa59d88b7/g' package/lean/ipt2socks/Makefile
 
 # luci-app-easymesh
 #git clone https://github.com/ntlf9t/luci-app-easymesh package/lean/luci-app-easymesh
