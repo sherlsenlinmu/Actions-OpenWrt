@@ -19,6 +19,7 @@ rm -rf feeds/packages/multimedia/UnblockNeteaseMusic-Go
 rm -rf feeds/packages/net/xray-core
 rm -rf feeds/packages/net/chinadns-ng
 rm -rf feeds/packages/net/v2ray-plugin
+sed -i '1d' mt7981/target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7981-h3c-nx30pro.dts
 
 # Modify default
 sed -i 's/192.168.6.1/192.168.10.1/g' package/base-files/files/bin/config_generate
