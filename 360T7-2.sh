@@ -14,8 +14,8 @@
 #rm -rf feeds/luci/applications/luci-app-zerotier
 #rm -rf feeds/luci/applications/luci-app-passwall
 #rm -rf feeds/luci/applications/luci-app-openclash
-#rm -rf feeds/luci/applications/luci-app-unblockmusic
-#rm -rf feeds/packages/multimedia/UnblockNeteaseMusic-Go
+rm -rf feeds/luci/applications/luci-app-unblockmusic
+rm -rf feeds/packages/multimedia/UnblockNeteaseMusic-Go
 #rm -rf feeds/packages/net/xray-core
 #rm -rf feeds/packages/net/chinadns-ng
 #rm -rf feeds/packages/net/v2ray-plugin
