@@ -14,8 +14,8 @@
 #rm -rf feeds/luci/applications/luci-app-zerotier
 #rm -rf feeds/luci/applications/luci-app-passwall
 #rm -rf feeds/luci/applications/luci-app-openclash
-#rm -rf feeds/luci/applications/luci-app-unblockmusic
-#rm -rf feeds/packages/multimedia/UnblockNeteaseMusic-Go
+rm -rf feeds/luci/applications/luci-app-unblockmusic
+rm -rf feeds/packages/multimedia/UnblockNeteaseMusic-Go
 #rm -rf feeds/packages/net/xray-core
 #rm -rf feeds/packages/net/chinadns-ng
 #rm -rf feeds/packages/net/v2ray-plugin
@@ -59,8 +59,8 @@ svn co https://github.com/kiddin9/openwrt-packages/trunk/msd_lite package/apps/m
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/v2ray-plugin package/apps/v2ray-plugin
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/apps/chinadns-ng
 #svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
-#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-unblockmusic package/apps/luci-app-unblockmusic
-#svn co https://github.com/kiddin9/openwrt-packages/trunk/UnblockNeteaseMusic-Go package/apps/UnblockNeteaseMusic-Go
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-unblockmusic package/apps/luci-app-unblockmusic
+svn co https://github.com/kiddin9/openwrt-packages/trunk/UnblockNeteaseMusic-Go package/apps/UnblockNeteaseMusic-Go
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-aliyundrive-webdav package/apps/luci-app-aliyundrive-webdav
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/aliyundrive-webdav package/apps/aliyundrive-webdav
 
