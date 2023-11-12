@@ -22,8 +22,8 @@ rm -rf feeds/packages/multimedia/UnblockNeteaseMusic-Go
 #sed -i '1d' target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7981-h3c-nx30pro.dts
 
 # Modify default
-sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
-#sed -i 's/192.168.6.1/192.168.10.1/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.6.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
 sed -i "s/DISTRIB_ID='%D'/DISTRIB_ID='ImmortalWrt'/g" package/base-files/files/etc/openwrt_release
