@@ -38,8 +38,8 @@ sed -i 's/OPENWRT_RELEASE="%D %V %C"/OPENWRT_RELEASE="ImmortalWrt %C"/g' package
 sed -i 's/%D %V/Base on ImmortalWrt by Hanwckf/g' package/base-files/files/etc/banner
 
 # 添加额外软件包
-#git clone https://github.com/sherlsenlinmu/apps package/apps
-git clone https://github.com/kiddin9/openwrt-packages package/apps
+git clone https://github.com/sherlsenlinmu/apps package/apps
+#git clone https://github.com/kiddin9/openwrt-packages package/apps
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/wol package/apps/wol
 #svn co https://github.com/sherlsenlinmu/apps/trunk/luci-app-control-weburl package/apps/luci-app-control-weburl
