@@ -23,7 +23,6 @@
 
 # Modify default
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
-#sed -i 's/192.168.6.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
 sed -i "s/DISTRIB_ID='%D'/DISTRIB_ID='ImmortalWrt'/g" package/base-files/files/etc/openwrt_release
@@ -38,7 +37,8 @@ sed -i 's/OPENWRT_RELEASE="%D %V %C"/OPENWRT_RELEASE="ImmortalWrt %C"/g' package
 sed -i 's/%D %V/Base on ImmortalWrt by Hanwckf/g' package/base-files/files/etc/banner
 
 # 添加额外软件包
-git clone https://github.com/sherlsenlinmu/apps package/apps
+git clone https://github.com/kiddin9/luci-app-dnsfilter package/apps
+#git clone https://github.com/sherlsenlinmu/apps package/apps
 #git clone https://github.com/kiddin9/openwrt-packages package/apps
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/wol package/apps/wol
