@@ -27,8 +27,8 @@ sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luc
 sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
 sed -i "s/DISTRIB_ID='%D'/DISTRIB_ID='ImmortalWrt'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/DISTRIB_RELEASE='%V'/DISTRIB_RELEASE=''/g" package/base-files/files/etc/openwrt_release
-sed -i "s/DISTRIB_REVISION='%R'/DISTRIB_REVISION='R24.2.10'/g" package/base-files/files/etc/openwrt_release
-sed -i "s/DISTRIB_DESCRIPTION='%D %V %C'/DISTRIB_DESCRIPTION='ImmortalWrt R24.2.10 '/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_REVISION='%R'/DISTRIB_REVISION='R24.2.16'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_DESCRIPTION='%D %V %C'/DISTRIB_DESCRIPTION='ImmortalWrt R24.2.16 '/g" package/base-files/files/etc/openwrt_release
 sed -i 's/NAME="%D"/NAME="ImmortalWrt"/g' package/base-files/files/usr/lib/os-release
 sed -i 's/VERSION="%V"/VERSION=""/g' package/base-files/files/usr/lib/os-release
 sed -i 's/PRETTY_NAME="%D %V"/PRETTY_NAME="ImmortalWrt"/g' package/base-files/files/usr/lib/os-release
@@ -61,8 +61,8 @@ git clone https://github.com/kiddin9/luci-app-dnsfilter package/apps
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/v2ray-plugin package/apps/v2ray-plugin
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/apps/chinadns-ng
 #svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
-#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-unblockmusic package/apps/luci-app-unblockmusic
-#svn co https://github.com/kiddin9/openwrt-packages/trunk/UnblockNeteaseMusic-Go package/apps/UnblockNeteaseMusic-Go
+svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-unblockmusic package/apps/luci-app-unblockmusic
+svn co https://github.com/kiddin9/openwrt-packages/trunk/UnblockNeteaseMusic-Go package/apps/UnblockNeteaseMusic-Go
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-aliyundrive-webdav package/apps/luci-app-aliyundrive-webdav
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/aliyundrive-webdav package/apps/aliyundrive-webdav
 
