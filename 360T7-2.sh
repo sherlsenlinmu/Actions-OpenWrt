@@ -38,7 +38,7 @@ sed -i 's/%D %V/Base on ImmortalWrt by Hanwckf/g' package/base-files/files/etc/b
 
 # 添加额外软件包
 git clone https://github.com/kiddin9/luci-app-dnsfilter package/apps
-#git clone https://github.com/sherlsenlinmu/apps package/apps
+git clone https://github.com/sherlsenlinmu/apps package/apps
 #git clone https://github.com/kiddin9/openwrt-packages package/apps
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-timewol package/apps/luci-app-control-timewol
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/wol package/apps/wol
@@ -61,8 +61,8 @@ git clone https://github.com/kiddin9/luci-app-dnsfilter package/apps
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/v2ray-plugin package/apps/v2ray-plugin
 #svn co https://github.com/xiaorouji/openwrt-passwall/trunk/chinadns-ng package/apps/chinadns-ng
 #svn co https://github.com/vernesong/OpenClash/trunk/luci-app-openclash package/apps/luci-app-openclash
-svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-unblockmusic package/apps/luci-app-unblockmusic
-svn co https://github.com/kiddin9/openwrt-packages/trunk/UnblockNeteaseMusic-Go package/apps/UnblockNeteaseMusic-Go
+#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-unblockmusic package/apps/luci-app-unblockmusic
+#svn co https://github.com/kiddin9/openwrt-packages/trunk/UnblockNeteaseMusic-Go package/apps/UnblockNeteaseMusic-Go
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-aliyundrive-webdav package/apps/luci-app-aliyundrive-webdav
 #svn co https://github.com/kiddin9/openwrt-packages/trunk/aliyundrive-webdav package/apps/aliyundrive-webdav
 
