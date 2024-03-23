@@ -37,7 +37,7 @@ sed -i 's/%D %V/Base on OpenWrt by Lean/g' package/base-files/files/etc/banner
 #svn co https://github.com/sherlsenlinmu/apps/trunk/luci-app-control-weburl package/apps/luci-app-control-weburl
 #svn co https://github.com/sherlsenlinmu/apps/trunk/luci-app-rebootschedule package/apps/luci-app-rebootschedule
 #svn co https://github.com/sirpdboy/sirpdboy-package/trunk/luci-app-control-speedlimit package/apps/luci-app-control-speedlimit
-#svn co https://github.com/kiddin9/openwrt-packages/trunk/luci-app-dnsfilter package/apps/luci-app-dnsfilter
+git clone https://github.com/sherlsenlinmu/luci-app-dnsfilter package/luci-app-dnsfilter
 git clone -b main --single-branch https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
 git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
