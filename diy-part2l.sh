@@ -35,13 +35,12 @@ sed -i 's/%D %V/Base on OpenWrt by Lean/g' package/base-files/files/etc/banner
 # 添加额外软件包
 git clone https://github.com/sherlsenlinmu/apps package/apps
 git clone https://github.com/kiddin9/luci-app-dnsfilter package/luci-app-dnsfilter
-git clone -b main --single-branch https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
+#git clone -b main --single-branch https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
 git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
 git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
-git clone https://github.com/jefferymvp/luci-app-koolproxyR package/luci-app-koolproxyR
+#git clone https://github.com/jefferymvp/luci-app-koolproxyR package/luci-app-koolproxyR
 #git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
-
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
