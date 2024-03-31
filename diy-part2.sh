@@ -47,7 +47,11 @@ git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt
 git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
 git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
 #git clone https://github.com/jefferymvp/luci-app-koolproxyR package/luci-app-koolproxyR
-#git clone https://github.com/rufengsuixing/luci-app-zerotier package/apps/luci-app-zerotier
+#git clone https://github.com/rufengsuixing/luci-app-zerotier package/luci-app-zerotier
+git clone https://github.com/sirpdboy/luci-app-advancedplus package/luci-app-advancedplus
+git clone https://github.com/sirpdboy/luci-app-ddns-go package/luci-app-ddns-go
+git clone https://github.com/sirpdboy/luci-app-lucky package/luci-app-lucky
+
 
 # 晶晨宝盒
 sed -i "s|https.*/amlogic-s9xxx-openwrt|https://github.com/breakings/OpenWrt|g" package/luci-app-amlogic/root/etc/config/amlogic
