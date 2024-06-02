@@ -1,11 +1,13 @@
 #
-# Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
+# https://github.com/P3TERX/Actions-OpenWrt
+#
+# File: .github/workflows/openwrt-bulder.yml
+# Description: Build OpenWrt using GitHub Actions
+#
+# Copyright (c) 2019-2024 P3TERX <https://p3terx.com>
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
-#
-# https://github.com/P3TERX/Actions-OpenWrt
-# Description: Build OpenWrt using GitHub Actions
 #
 
 name: ACRH17
@@ -13,11 +15,6 @@ name: ACRH17
 on:
   repository_dispatch:
   workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
@@ -28,7 +25,7 @@ env:
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
-  UPLOAD_RELEASE: false
+  UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
 jobs:
@@ -150,14 +147,14 @@ jobs:
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main
       with:
-        retain_days: 60
-        keep_minimum_runs: 60
+        retain_days: 0
+        keep_minimum_runs: 2
 
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@master
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
-        keep_latest: 30
+        keep_latest: 3
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
