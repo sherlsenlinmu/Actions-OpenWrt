@@ -29,6 +29,8 @@ sed -i 's/OpenWrt 21.02-SNAPSHOT/OpenWrt 21.02/g' package/default-settings/files
 #sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 sed -i "s/DISTRIB_ID='%D'/DISTRIB_ID='OpenWrt'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/DISTRIB_RELEASE='%V'/DISTRIB_RELEASE=''/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_REVISION='%R'/DISTRIB_REVISION='R24.6.1'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_DESCRIPTION='%D %V %C'/DISTRIB_DESCRIPTION='OpenWrt R24.6.1 '/g" package/base-files/files/etc/openwrt_release
 sed -i 's/NAME="%D"/NAME="OpenWrt"/g' package/base-files/files/usr/lib/os-release
 sed -i 's/VERSION="%V"/VERSION=""/g' package/base-files/files/usr/lib/os-release
 sed -i 's/PRETTY_NAME="%D %V"/PRETTY_NAME="OpenWrt"/g' package/base-files/files/usr/lib/os-release
