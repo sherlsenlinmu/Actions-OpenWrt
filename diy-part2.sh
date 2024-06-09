@@ -40,12 +40,12 @@ sed -i 's/%D %V/Base on OpenWrt by OpenWrt/g' package/base-files/files/etc/banne
 # 添加额外软件包
 #git clone -b master --single-branch https://github.com/vernesong/OpenClash package/luci-app-openclash
 #git clone https://github.com/ophub/luci-app-amlogic package/luci-app-amlogic
-#git clone https://github.com/sherlsenlinmu/apps package/apps
-#git clone https://github.com/kiddin9/luci-app-dnsfilter package/luci-app-dnsfilter
-git clone -b main --single-branch https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
-git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
-#git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
-#git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
+git clone https://github.com/sherlsenlinmu/apps package/apps
+git clone https://github.com/kiddin9/luci-app-dnsfilter package/luci-app-dnsfilter
+#git clone -b main --single-branch https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
+#git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
+git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
+git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
 #git clone https://github.com/jefferymvp/luci-app-koolproxyR package/luci-app-koolproxyR
 #git clone https://github.com/rufengsuixing/luci-app-zerotier package/luci-app-zerotier
 #git clone https://github.com/sirpdboy/luci-app-advancedplus package/luci-app-advancedplus
