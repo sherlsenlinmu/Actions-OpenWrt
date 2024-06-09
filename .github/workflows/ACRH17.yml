@@ -17,8 +17,8 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: 22.03
+  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_BRANCH: openwrt-22.03
   #REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ACRH17.config
