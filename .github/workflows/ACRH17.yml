@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/sherlsenlinmu/lede
   #REPO_BRANCH: openwrt-21.02
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
