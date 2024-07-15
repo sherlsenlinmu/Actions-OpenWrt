@@ -37,6 +37,7 @@ sed -i 's/VERSION_ID="%v"/VERSION_ID=""/g' package/base-files/files/usr/lib/os-r
 sed -i 's/OPENWRT_RELEASE="%D %V %C"/OPENWRT_RELEASE="OpenWrt %C"/g' package/base-files/files/usr/lib/os-release
 sed -i 's/%D %V/Base on OpenWrt by Lean/g' package/base-files/files/etc/banner
 #sed -i 's/DEPENDS:=+libxtables +kmod-ipt-fullconenat/DEPENDS:=+iptables +kmod-ipt-fullconenat/g' package/network/services/fullconenat/Makefile
+#sed -i 's///g' package/kernel/ath10k-ct/Makefile
 
 # 添加额外软件包
 #git clone -b master --single-branch https://github.com/vernesong/OpenClash package/luci-app-openclash
