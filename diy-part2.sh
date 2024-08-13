@@ -23,7 +23,7 @@
 sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root:::0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
-sed -i 's/R24.8.1/R24.8.1/g' package/lean/default-settings/files/zzz-default-settings
+sed -i 's/R24.8.15/R24.8.15/g' package/lean/default-settings/files/zzz-default-settings
 sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 sed -i '34d' package/lean/default-settings/files/zzz-default-settings
 sed -i "s/DISTRIB_ID='%D'/DISTRIB_ID='OpenWrt'/g" package/base-files/files/etc/openwrt_release
@@ -40,7 +40,7 @@ sed -i 's/%D %V/Base on OpenWrt by Lean/g' package/base-files/files/etc/banner
 # 添加额外软件包
 #git clone -b master --single-branch https://github.com/vernesong/OpenClash package/luci-app-openclash
 #git clone https://github.com/ophub/luci-app-amlogic package/luci-app-amlogic
-#git clone https://github.com/sherlsenlinmu/apps package/apps
+git clone https://github.com/sherlsenlinmu/apps package/apps
 git clone https://github.com/kiddin9/luci-app-dnsfilter package/luci-app-dnsfilter
 git clone -b main --single-branch https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
