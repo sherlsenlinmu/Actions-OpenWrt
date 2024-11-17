@@ -44,7 +44,7 @@ git clone https://github.com/ophub/luci-app-amlogic package/luci-app-amlogic
 git clone https://github.com/kiddin9/luci-app-dnsfilter package/luci-app-dnsfilter
 git clone -b main --single-branch https://github.com/xiaorouji/openwrt-passwall package/openwrt-passwall
 git clone https://github.com/xiaorouji/openwrt-passwall-packages package/openwrt-passwall-packages
-git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
+#git clone https://github.com/sirpdboy/luci-app-eqosplus package/luci-app-eqosplus
 git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-autotimeset
 #git clone https://github.com/jefferymvp/luci-app-koolproxyR package/luci-app-koolproxyR
 #git clone https://github.com/rufengsuixing/luci-app-zerotier package/luci-app-zerotier
@@ -55,10 +55,10 @@ git clone https://github.com/sirpdboy/luci-app-autotimeset package/luci-app-auto
 
 
 # 晶晨宝盒
-sed -i "s|https.*/amlogic-s9xxx-openwrt|https://github.com/breakings/OpenWrt|g" package/custom/luci-app-amlogic/luci-app-amlogic/root/etc/config/amlogic
-sed -i "s|http.*/library|https://github.com/breakings/OpenWrt|g" package/custom/luci-app-amlogic/luci-app-amlogic/root/etc/config/amlogic
-sed -i "s|s9xxx_lede|ARMv8|g" package/custom/luci-app-amlogic/luci-app-amlogic/root/etc/config/amlogic
-#sed -i "s|.img.gz|..OPENWRT_SUFFIX|g" package/custom/luci-app-amlogic/luci-app-amlogic/root/etc/config/amlogic
+sed -i "s|https.*/amlogic-s9xxx-openwrt|https://github.com/breakings/OpenWrt|g" package/luci-app-amlogic/luci-app-amlogic/root/etc/config/amlogic
+sed -i "s|http.*/library|https://github.com/breakings/OpenWrt|g" package/luci-app-amlogic/luci-app-amlogic/root/etc/config/amlogic
+sed -i "s|s9xxx_lede|ARMv8|g" package/luci-app-amlogic/luci-app-amlogic/root/etc/config/amlogic
+#sed -i "s|.img.gz|..OPENWRT_SUFFIX|g" package/luci-app-amlogic/luci-app-amlogic/root/etc/config/amlogic
 
 # readd cpufreq for aarch64
 #sed -i 's/LUCI_DEPENDS.*/LUCI_DEPENDS:=\@\(arm\|\|aarch64\)/g' feeds/luci/applications/luci-app-cpufreq/Makefile
