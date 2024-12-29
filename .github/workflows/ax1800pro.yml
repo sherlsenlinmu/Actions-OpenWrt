@@ -18,7 +18,8 @@ on:
 
 env:
   REPO_URL: https://github.com/LiBwrt/openwrt-6.x
-  REPO_BRANCH: kernel-6.12
+  #REPO_BRANCH: kernel-6.12
+  REPO_BRANCH: 24.10-6.12
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ax1800pro.config
   DIY_P1_SH: diy-part1.sh
