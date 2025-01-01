@@ -15,6 +15,7 @@
 #rm -rf feeds/luci/applications/luci-app-socat
 #rm -rf feeds/packages/net/v2ray-geodata
 #rm -rf package/lean/autosamba
+rm -rf feeds/luci/themes/luci-theme-bootstrap
 
 # autocore
 #sed -i 's/DEPENDS:=@(.*/DEPENDS:=@(TARGET_bcm27xx||TARGET_bcm53xx||TARGET_ipq40xx||TARGET_ipq806x||TARGET_ipq807x||TARGET_mvebu||TARGET_rockchip||TARGET_armvirt) \\/g' package/lean/autocore/Makefil
