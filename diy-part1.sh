@@ -11,8 +11,10 @@
 #
 
 # Uncomment a feed source
+sed -i '3d' feeds.conf.default
 sed -i '2d' feeds.conf.default
-#sed -i '1d' feeds.conf.default
+#sed -i 's/#src-git luci/src-git luci/g' feeds.conf.default
+#sed -i 's#root::0:0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' feeds.conf.default
 
 # Add a feed source
 echo 'src-git luci https://github.com/coolsnowwolf/luci' >>feeds.conf.default
