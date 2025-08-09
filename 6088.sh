@@ -19,10 +19,11 @@
 #rm -rf feeds/packages/net/xray-core
 #rm -rf feeds/packages/net/chinadns-ng
 #rm -rf feeds/packages/net/v2ray-plugin
+rm -rf /feeds/luci/themes/luci-theme-bootstrap
 
 # Modify default
 sed -i 's/192.168.6.1/192.168.10.1/g' package/base-files/files/bin/config_generate
-sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
+#sed -i 's/luci-theme-bootstrap/luci-theme-material/g' feeds/luci/collections/luci/Makefile
 sed -i 's#root:::0:99999:7:::#root:$1$wEehtjxj$YBu4quNfVUjzfv8p/PBo5.:0:0:99999:7:::#g' package/base-files/files/etc/shadow
 sed -i "s/DISTRIB_ID='%D'/DISTRIB_ID='ImmortalWrt'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/DISTRIB_RELEASE='%V'/DISTRIB_RELEASE=''/g" package/base-files/files/etc/openwrt_release
