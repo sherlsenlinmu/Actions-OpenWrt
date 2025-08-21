@@ -19,7 +19,7 @@
 #rm -rf feeds/packages/net/xray-core
 #rm -rf feeds/packages/net/chinadns-ng
 #rm -rf feeds/packages/net/v2ray-plugin
-rm -rf feeds/luci/themes/luci-theme-bootstrap
+#rm -rf feeds/luci/themes/luci-theme-bootstrap
 
 # Modify default
 sed -i 's/192.168.6.1/192.168.10.1/g' package/base-files/files/bin/config_generate
