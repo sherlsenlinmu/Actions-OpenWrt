@@ -33,7 +33,7 @@ sed -i 's/NAME="%D"/NAME="ImmortalWrt"/g' package/base-files/files/usr/lib/os-re
 sed -i 's/VERSION="%V"/VERSION=""/g' package/base-files/files/usr/lib/os-release
 sed -i 's/PRETTY_NAME="%D %V"/PRETTY_NAME="ImmortalWrt"/g' package/base-files/files/usr/lib/os-release
 sed -i 's/VERSION_ID="%v"/VERSION_ID=""/g' package/base-files/files/usr/lib/os-release
-sed -i 's/OPENWRT_RELEASE="%D %V %C"/OPENWRT_RELEASE="ImmortalWrt %C"/g' package/base-files/files/usr/lib/os-release
+sed -i 's/OPENWRT_RELEASE="%D %V %C"/OPENWRT_RELEASE="ImmortalWrt R25.8.23 "/g' package/base-files/files/usr/lib/os-release
 sed -i 's/%D %V/Base on ImmortalWrt/g' package/base-files/files/etc/banner
 
 # 添加额外软件包
